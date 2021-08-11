@@ -1,0 +1,23 @@
+
+.footer {
+  background-color: #555555;
+  color: #FFFFFF;
+  @apply mt-4 py-4;
+}
+
+.title {
+  color: #AAAAAA;
+  @apply font-bold text-xl text-center;
+}
+
+.links {
+  @apply list-none list-outside p-0;
+
+  li {
+    @apply w-full my-2 text-center;
+  }
+}
+
+.copyright {
+  @apply text-xs text-center mt-2;
+}
