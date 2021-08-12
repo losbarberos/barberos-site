@@ -19,7 +19,9 @@ const BarLayout = ({ children, title }: Props) => (
     </Head>
     <BarHeader />
     <BarSeparator />
+    <div className={styles.container}>
     {children}
+    </div>
     <BarFooter />
   </main>
 );

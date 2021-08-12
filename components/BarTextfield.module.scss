@@ -1,0 +1,23 @@
+.fieldWrapper {
+  @apply relative mb-2 border border-solid border-black;
+}
+
+.fieldInvalid {
+  @apply border-red-500;
+}
+
+.label {
+  @apply absolute text-xs text-gray-700 font-bold uppercase left-1 -top-0 transition delay-100 ease-in-out pointer-events-none;
+}
+
+.labelInvalid {
+  @apply text-red-500;
+}
+
+.field {
+  @apply bg-none bg-transparent p-2 pt-5 block border-none focus:outline-none rounded-none text-lg text-gray-600 w-full;
+}
+
+.requiredMark {
+  @apply text-red-500;
+}

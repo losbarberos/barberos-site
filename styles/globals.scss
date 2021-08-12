@@ -1,0 +1,76 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+  sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  @apply text-center text-2xl;
+}
+
+h4 {
+  @apply text-center;
+
+  img {
+    @apply align-middle mr-2;
+  }
+}
+
+p {
+  @apply text-justify;
+
+  &.notice {
+    @apply text-center;
+  }
+}
+
+.form-actions {
+  @apply w-full text-right;
+}
+
+.form-result-message {
+  @apply text-sm mr-2;
+}
+
+.contact-line {
+  @apply flex mt-4;
+
+  div:first-child {
+    @apply w-10 px-2;
+
+    img {
+      @apply w-6
+    }
+  }
+
+  & div:last-child {
+    @apply flex-1 leading-normal;
+  }
+}
+
+em {
+  @apply text-bar-red-500 not-italic;
+}
+
+a {
+  @apply border-0 border-b border-solid border-bar-red-500 text-bar-red-500 transition;
+
+  &:focus, &:hover {
+    @apply border-bar-red-200 duration-200 ease-in;
+  }
+
+  &.undecorated {
+    @apply border-b-0 text-current;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
