@@ -53,7 +53,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:none;fill-opacity:1;stroke:#0000cf;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#0000cf;stroke-width:16;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect886"
        width="240"
        height="420"
@@ -62,14 +62,14 @@
        ry="16"
        rx="16" />
     <circle
-       style="fill:none;fill-opacity:1;stroke:#cf0000;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;fill-opacity:1;stroke:#cf0000;stroke-width:16;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path912"
        cx="256"
-       cy="436"
-       r="12" />
+       cy="428"
+       r="16" />
     <path
-       style="fill:#cf0000;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="m 212,62 h 88 v 10 h -88 z"
+       style="fill:#cf0000;stroke:none;stroke-width:16px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 212,68 h 88 v 16 h -88 z"
        id="path916" />
   </g>
 </svg>

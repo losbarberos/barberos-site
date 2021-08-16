@@ -8,12 +8,12 @@ const About = () => (
 
     <p>
       Dans la sphère professionnelle du développement Web depuis plus de 15 ans, avec plus de 5 ans d’expérience en tant qu’Architecte
-      Logiciel, j’ai une solide expérience dans la conception d’applications performantes et résiliantes ainsi que leur exploitation. En
-      bout de chaine, je maîtrise aussi la conception d’applications clientes riches en front-end.
+      Logiciel, j’ai une solide expertise dans la conception d’applications performantes et résiliantes ainsi que dans leur exploitation. En
+      bout de chaîne, je maîtrise aussi la conception d’applications clientes riches en front-end.
     </p>
 
     <p>
-      Pour les applications complexes, je maîtrise aussi les processus d’industrialisation à travers le montage d’usine logicielle
+      Pour les applications complexes, j'exploite aussi les processus d’industrialisation à travers le montage d’usine logicielle
       (intégration continue, vérification automatique de qualité, déploiement continu).
     </p>
 

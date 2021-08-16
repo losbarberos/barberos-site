@@ -10,11 +10,11 @@ type Props = {
   [x: string]: any;
 };
 
-const BarTextarea = ({name, label, error, required, ...rest}: Props) => {
+const BarTextarea = ({ name, label, error, required, ...rest }: Props) => {
   return (
     <div className={`${styles.fieldWrapper} ${error ? styles.fieldInvalid : ''}`}>
-      <Field as="textarea" id={name} name={name} className={styles.field} required={required} {...rest}/>
-      <label htmlFor="name" className={`${styles.label} ${error ? styles.labelInvalid : ''}`}>
+      <Field as='textarea' id={name} name={name} className={styles.field} required={required} {...rest} />
+      <label htmlFor='name' className={`${styles.label} ${error ? styles.labelInvalid : ''}`}>
         {label}
         {required && <span className={styles.requiredMark}>*</span>}
       </label>

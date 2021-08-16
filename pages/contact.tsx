@@ -59,7 +59,7 @@ const Contact = () => {
 
       <section className='contact-line'>
         <div>
-          <img src="/icons/address.svg" alt='Adresse' />
+          <img src='/icons/address.svg' alt='Adresse' />
         </div>
         <div>
           3 A rue de Nancy
@@ -69,20 +69,20 @@ const Contact = () => {
       </section>
       <section className='contact-line'>
         <div>
-          <img src="/icons/phone.svg" alt='Téléphone' />
+          <img src='/icons/phone.svg' alt='Téléphone' />
         </div>
         <div>07 00 00 00 00</div>
       </section>
 
       <section className='contact-line'>
         <div>
-          <img src="/icons/email.svg" alt='Email' />
+          <img src='/icons/email.svg' alt='Email' />
         </div>
         <div>contact@barberos.fr</div>
       </section>
 
       <h4>
-        <img src="/icons/mail.svg" height="24"/>
+        <img src='/icons/mail.svg' height='24' />
         Envoyer un message
       </h4>
 

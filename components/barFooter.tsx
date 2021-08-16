@@ -8,22 +8,24 @@ const BarFooter = () => (
 
     <ul className={styles.links}>
       <li>
-        <Link href="/about">
-          <a className="undecorated">À propos</a>
+        <Link href='/about'>
+          <a className='undecorated'>À propos</a>
         </Link>
       </li>
       <li>
-        <Link href="/legal-mentions">
-          <a className="undecorated">Mentions légales</a>
+        <Link href='/legal-mentions'>
+          <a className='undecorated'>Mentions légales</a>
         </Link>
       </li>
       <li>
-        <Link href="/contact">
-          <a className="undecorated">Contact</a>
+        <Link href='/contact'>
+          <a className='undecorated'>Contact</a>
         </Link>
       </li>
       <li>
-          <a className="undecorated" href="https://github.com/losbarberos">Github</a>
+        <a className='undecorated' href='https://github.com/losbarberos' target='_blank'>
+          Github
+        </a>
       </li>
     </ul>
 

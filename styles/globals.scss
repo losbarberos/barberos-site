@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Oxygen:wght@400;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-  sans-serif;
+  font-family: Oxygen, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -11,12 +12,22 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Cairo, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
 h1 {
-  @apply text-center text-2xl;
+  @apply text-center text-3xl;
 }
 
 h4 {
-  @apply text-center;
+  @apply text-center text-xl;
 
   img {
     @apply align-middle mr-2;
@@ -46,12 +57,38 @@ p {
     @apply w-10 px-2;
 
     img {
-      @apply w-6
+      @apply w-6;
     }
   }
 
   & div:last-child {
     @apply flex-1 leading-normal;
+  }
+}
+
+.offer-line {
+  @apply flex flex-col lg:flex-row mt-10 items-center;
+
+  img {
+    @apply w-32 lg:mr-12;
+  }
+
+  div {
+    h4 {
+      @apply mb-4;
+    }
+
+    p {
+      @apply text-gray-700;
+    }
+  }
+}
+
+.offer-line.offer-line-even {
+  @apply lg:flex-row-reverse;
+
+  img {
+    @apply lg:mr-0 lg:ml-12;
   }
 }
 
@@ -62,12 +99,23 @@ em {
 a {
   @apply border-0 border-b border-solid border-bar-red-500 text-bar-red-500 transition;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     @apply border-bar-red-200 duration-200 ease-in;
   }
 
   &.undecorated {
     @apply border-b-0 text-current;
+  }
+}
+
+ul.bar-list {
+  @apply list-none;
+
+  li::before {
+    @apply inline-block h-3 w-3 -ml-4 mr-2 bg-cover;
+    content: '';
+    background-image: url(/icons/item.svg);
   }
 }
 

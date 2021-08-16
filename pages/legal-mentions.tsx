@@ -7,8 +7,8 @@ const LegalMentions = () => (
     <p>
       Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie
       numérique, dite L.C.E.N., il est porté à la connaissance des Utilisateurs du site <a href='https://barberos.fr'>barberos.fr</a> les
-      présentes mentions légales. La connexion et la navigation sur le site (indiquer le nom du site) par l’Utilisateur implique acceptation
-      intégrale et sans réserve des présentes mentions légales.
+      présentes mentions légales. La connexion et la navigation sur le site Barberos par l’Utilisateur implique acceptation intégrale et
+      sans réserve des présentes mentions légales.
     </p>
     <p>Ces dernières sont accessibles sur le site à la rubrique « Mentions légales ».</p>
     <h5>ARTICLE 1 : L’éditeur</h5>
@@ -17,7 +17,7 @@ const LegalMentions = () => (
       immatriculée au RCS de Nancy sous le numéro 902 205 202 dont le siège social est situé au 3 A rue de Nancy 54390 FROUARD, numéro de
       téléphone 07554444, adresse e-mail : contact@barberos.fr.
     </p>
-    <p>N° de TVA intracommunautaire : _______________</p>
+    <p>N° de TVA intracommunautaire : FR77902205202</p>
     <p>Le Directeur de la publication est Loïc Barbier.</p>
     <h5>ARTICLE 2 : L’hébergeur</h5>
     <p>
@@ -36,7 +36,7 @@ const LegalMentions = () => (
     </p>
     <h5>ARTICLE 3 : Accès au site</h5>
     <p>
-      Le site est accessible par tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découlant
+      Le site est accessible par tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découler
       d’une nécessité de maintenance. En cas de modification, interruption ou suspension des services le site{' '}
       <a href='https://barberos.fr'>barberos.fr</a> ne saurait être tenu responsable.
     </p>
@@ -48,9 +48,9 @@ const LegalMentions = () => (
     <h5>ARTICLE 5 : Cookies</h5>
     <p>
       L’Utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur son logiciel de
-      navigation.
+      navigation. Ce cookie a une finalité analytique.
     </p>
-    <p>En naviguant sur le site, il les accepte.</p>
+    <p>En naviguant sur le site, il l'accepte.</p>
     <p>
       Un cookie est un élément qui ne permet pas d’identifier l’Utilisateur mais sert à enregistrer des informations relatives à la
       navigation de celui-ci sur le site Internet. L’Utilisateur pourra désactiver ce cookie par l’intermédiaire des paramètres figurant au
