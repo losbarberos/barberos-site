@@ -5,8 +5,8 @@ const Home = () => (
     <h1>Conception d’applications et sites Web</h1>
     <p>Je crée et vous accompagne dans vos projets de création de sites Web, sites vitrines, landing pages, CRM, ERP.</p>
 
-    <section className='offer-line'>
-      <img src='/images/support.svg' />
+    <section className="offer-line">
+      <img src="/images/support.svg" />
       <div>
         <h4>
           Accompagnement <em>sur-mesure</em>
@@ -22,7 +22,7 @@ const Home = () => (
         <p>
           Par ailleurs, je vous accompagne sur l'audit de vos applications existantes sur des sujets comme des problèmes de performances, de
           sécurité ou de maintenabilité. Un audit permettra :
-          <ul className='bar-list'>
+          <ul className="bar-list">
             <li>une analyse de votre application et/ou de votre infrastructure ;</li>
             <li>des propositions d'axes de travail ;</li>
             <li>l'élaboration de solutions en fonction de vos choix et de vos capacités.</li>
@@ -31,8 +31,8 @@ const Home = () => (
       </div>
     </section>
 
-    <section className='offer-line offer-line-even'>
-      <img src='/images/technology.svg' />
+    <section className="offer-line offer-line-even">
+      <img src="/images/technology.svg" />
       <div>
         <h4>
           Transformation <em>numérique</em>
@@ -52,8 +52,8 @@ const Home = () => (
       </div>
     </section>
 
-    <section className='offer-line'>
-      <img src='/images/career.svg' />
+    <section className="offer-line">
+      <img src="/images/career.svg" />
       <div>
         <h4>
           Formations <em>techniques</em>

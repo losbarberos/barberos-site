@@ -1,13 +1,11 @@
 import { ErrorMessage, Form, Formik } from 'formik';
 import { useState } from 'react';
-import Image from 'next/image';
 import BarLayout from '../components/barLayout';
 import BarTextfield from '../components/barTextfield';
 import BarTextarea from '../components/barTextarea';
 import BarButton from '../components/barButton';
 import BarFormErrorContainer from '../components/barFormErrorContainer';
 import { contactUs } from '../services/contact';
-import mail from '../public/icons/mail.svg';
 
 type Values = {
   fromName: string;
@@ -57,9 +55,9 @@ const Contact = () => {
         <div>Siren : 902 205 202</div>
       </section>
 
-      <section className='contact-line'>
+      <section className="contact-line">
         <div>
-          <img src='/icons/address.svg' alt='Adresse' />
+          <img src="/icons/address.svg" alt="Adresse" />
         </div>
         <div>
           3 A rue de Nancy
@@ -67,22 +65,22 @@ const Contact = () => {
           54390 FROUARD
         </div>
       </section>
-      <section className='contact-line'>
+      <section className="contact-line">
         <div>
-          <img src='/icons/phone.svg' alt='Téléphone' />
+          <img src="/icons/phone.svg" alt="Téléphone" />
         </div>
-        <div>07 00 00 00 00</div>
+        <div>07 80 98 40 00</div>
       </section>
 
-      <section className='contact-line'>
+      <section className="contact-line">
         <div>
-          <img src='/icons/email.svg' alt='Email' />
+          <img src="/icons/email.svg" alt="Email" />
         </div>
         <div>contact@barberos.fr</div>
       </section>
 
       <h4>
-        <img src='/icons/mail.svg' height='24' />
+        <img src="/icons/mail.svg" height="24" />
         Envoyer un message
       </h4>
 
@@ -104,20 +102,20 @@ const Contact = () => {
       >
         {({ isSubmitting, handleReset, touched, errors }) => (
           <Form>
-            <BarTextfield name='fromName' label='Nom' error={touched.fromName && !!errors.fromName} required />
-            <ErrorMessage name='fromName' render={renderErrorMessage} />
+            <BarTextfield name="fromName" label="Nom" error={touched.fromName && !!errors.fromName} required />
+            <ErrorMessage name="fromName" render={renderErrorMessage} />
 
-            <BarTextfield name='fromEmail' label='Email' type='email' error={touched.fromEmail && !!errors.fromEmail} required />
-            <ErrorMessage name='fromEmail' render={renderErrorMessage} />
+            <BarTextfield name="fromEmail" label="Email" type="email" error={touched.fromEmail && !!errors.fromEmail} required />
+            <ErrorMessage name="fromEmail" render={renderErrorMessage} />
 
-            <BarTextfield name='subject' label='Sujet' error={touched.subject && !!errors.subject} required />
-            <ErrorMessage name='subject' render={renderErrorMessage} />
+            <BarTextfield name="subject" label="Sujet" error={touched.subject && !!errors.subject} required />
+            <ErrorMessage name="subject" render={renderErrorMessage} />
 
-            <BarTextarea name='body' label='Message' rows={6} error={touched.body && !!errors.body} required />
-            <ErrorMessage name='body' render={renderErrorMessage} />
+            <BarTextarea name="body" label="Message" rows={6} error={touched.body && !!errors.body} required />
+            <ErrorMessage name="body" render={renderErrorMessage} />
 
-            <div className='form-actions'>
-              {resultMessage && <span className='form-result-message'>{resultMessage}</span>}
+            <div className="form-actions">
+              {resultMessage && <span className="form-result-message">{resultMessage}</span>}
               <BarButton type={'submit'} disabled={isSubmitting} label={'Envoyer'} />
             </div>
           </Form>
