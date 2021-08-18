@@ -1,6 +1,1 @@
-<svg width="300" height="15" viewBox="0 0 300 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="300" height="15" fill="white"/>
-<line x1="129.933" y1="5.50154" x2="179.779" y2="1.57859" stroke="#CF0000"/>
-<line x1="129.961" y1="9.42451" x2="179.807" y2="5.50156" stroke="#0000CF"/>
-<line x1="129.961" y1="13.3475" x2="179.807" y2="9.42453" stroke="#CF0000"/>
-</svg>
+<svg width="300" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M0 0h300v15H0z"/><path stroke="#CF0000" d="m129.933 5.502 49.846-3.923"/><path stroke="#0000CF" d="m129.961 9.425 49.846-3.923"/><path stroke="#CF0000" d="m129.961 13.348 49.846-3.923"/></svg>
