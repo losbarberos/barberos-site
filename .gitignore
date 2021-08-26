@@ -12,6 +12,12 @@
 /.next/
 /out/
 
+# nx dist
+/dist
+
+# firebase
+/.firebase/
+
 # production
 /build
 
@@ -32,5 +38,7 @@ yarn-error.log*
 
 # vercel
 .vercel
-/.idea/
-/.firebase/
+
+# IDE
+/.idea
+/.vscode
