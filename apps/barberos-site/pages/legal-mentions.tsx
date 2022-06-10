@@ -14,7 +14,7 @@ const LegalMentions = () => (
     <h5>ARTICLE 1 : L&apos;éditeur</h5>
     <p>
       L&apos;édition du site <a href="https://barberos.fr">barberos.fr</a> est assurée par la Société BARBEROS EURL au capital de 1000 euros,
-      immatriculée au RCS de Nancy sous le numéro 902 205 202 dont le siège social est situé au 3 A rue de Nancy 54390 FROUARD, numéro de
+      immatriculée au RCS de Nancy sous le numéro 902 205 202 dont le siège social est situé au 21 rue Charles Martel 54250 CHAMPIGNEULLES, numéro de
       téléphone 07 80 98 40 00, adresse e-mail : contact@barberos.fr.
     </p>
     <p>N° de TVA intracommunautaire : FR77902205202</p>

@@ -60,9 +60,9 @@ const Contact = () => {
           <img src="/icons/address.svg" alt="Adresse" />
         </div>
         <div>
-          3 A rue de Nancy
+          21 rue Charles Martel
           <br />
-          54390 FROUARD
+          54250 CHAMPIGNEULLES
         </div>
       </section>
       <section className="contact-line">
