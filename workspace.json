@@ -14,8 +14,10 @@
             "outputPath": "dist/apps/barberos-site"
           },
           "configurations": {
-            "production": {}
-          }
+            "production": {},
+            "development": {}
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "executor": "@nrwl/next:server",
@@ -27,8 +29,13 @@
             "production": {
               "buildTarget": "barberos-site:build:production",
               "dev": false
+            },
+            "development": {
+              "buildTarget": "barberos-site:build:development",
+              "dev": true
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "export": {
           "executor": "@nrwl/next:export",
