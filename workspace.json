@@ -50,7 +50,8 @@
             "lintFilePatterns": ["apps/barberos-site/**/*.{ts,tsx,js,jsx}"]
           }
         }
-      }
+      },
+      "tags": []
     },
     "barberos-site-e2e": {
       "root": "apps/barberos-site-e2e",
@@ -76,7 +77,9 @@
             "lintFilePatterns": ["apps/barberos-site-e2e/**/*.{js,ts}"]
           }
         }
-      }
+      },
+      "tags": [],
+      "implicitDependencies": ["barberos-site"]
     }
   }
 }

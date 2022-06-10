@@ -26,15 +26,6 @@
       }
     ]
   },
-  "projects": {
-    "barberos-site": {
-      "tags": []
-    },
-    "barberos-site-e2e": {
-      "tags": [],
-      "implicitDependencies": ["barberos-site"]
-    }
-  },
   "cli": {
     "defaultCollection": "@nrwl/next"
   },
