@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import styles from './BarFormErrorContaier.module.scss';
+import styles from './BarFormErrorContainer.module.scss';
 
 type Props = {
   children?: ReactNode;

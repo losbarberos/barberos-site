@@ -1,6 +1,6 @@
 import styles from './BarTextfield.module.scss';
-import React, { ChangeEvent, ChangeEventHandler, FocusEventHandler } from 'react';
-import { Field } from 'formik';
+import React from 'react';
+import {Field} from 'formik';
 
 type Props = {
   name: string;

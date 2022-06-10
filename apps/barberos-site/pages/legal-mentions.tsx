@@ -5,23 +5,23 @@ const LegalMentions = () => (
     <h1>Mentions légales</h1>
     <p className="notice">En vigueur au 15/08/2021</p>
     <p>
-      Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie
+      Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l&apos;économie
       numérique, dite L.C.E.N., il est porté à la connaissance des Utilisateurs du site <a href="https://barberos.fr">barberos.fr</a> les
-      présentes mentions légales. La connexion et la navigation sur le site Barberos par l’Utilisateur implique acceptation intégrale et
+      présentes mentions légales. La connexion et la navigation sur le site Barberos par l&apos;Utilisateur implique acceptation intégrale et
       sans réserve des présentes mentions légales.
     </p>
     <p>Ces dernières sont accessibles sur le site à la rubrique « Mentions légales ».</p>
-    <h5>ARTICLE 1 : L’éditeur</h5>
+    <h5>ARTICLE 1 : L&apos;éditeur</h5>
     <p>
-      L'édition du site <a href="https://barberos.fr">barberos.fr</a> est assurée par la Société BARBEROS EURL au capital de 1000 euros,
+      L&apos;édition du site <a href="https://barberos.fr">barberos.fr</a> est assurée par la Société BARBEROS EURL au capital de 1000 euros,
       immatriculée au RCS de Nancy sous le numéro 902 205 202 dont le siège social est situé au 3 A rue de Nancy 54390 FROUARD, numéro de
       téléphone 07 80 98 40 00, adresse e-mail : contact@barberos.fr.
     </p>
     <p>N° de TVA intracommunautaire : FR77902205202</p>
     <p>Le Directeur de la publication est Loïc Barbier.</p>
-    <h5>ARTICLE 2 : L’hébergeur</h5>
+    <h5>ARTICLE 2 : L&apos;hébergeur</h5>
     <p>
-      L'hébergeur du site <a href="https://barberos.fr">barberos.fr</a> est la Société Google, dont le siège social est situé à :
+      L&apos;hébergeur du site <a href="https://barberos.fr">barberos.fr</a> est la Société Google, dont le siège social est situé à :
     </p>
     <p>
       <blockquote>
@@ -50,7 +50,7 @@ const LegalMentions = () => (
       L’Utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur son logiciel de
       navigation. Ce cookie a une finalité analytique.
     </p>
-    <p>En naviguant sur le site, il l'accepte.</p>
+    <p>En naviguant sur le site, il l&apos;accepte.</p>
     <p>
       Un cookie est un élément qui ne permet pas d’identifier l’Utilisateur mais sert à enregistrer des informations relatives à la
       navigation de celui-ci sur le site Internet. L’Utilisateur pourra désactiver ce cookie par l’intermédiaire des paramètres figurant au

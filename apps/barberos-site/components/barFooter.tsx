@@ -23,7 +23,7 @@ const BarFooter = () => (
         </Link>
       </li>
       <li>
-        <a className="undecorated" href="https://github.com/losbarberos" target="_blank">
+        <a className="undecorated" href="https://github.com/losbarberos" target="_blank" rel="noreferrer">
           Github
         </a>
       </li>
