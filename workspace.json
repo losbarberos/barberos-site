@@ -8,9 +8,7 @@
       "targets": {
         "build": {
           "executor": "@nrwl/next:build",
-          "outputs": [
-            "{options.outputPath}"
-          ],
+          "outputs": ["{options.outputPath}"],
           "options": {
             "root": "apps/barberos-site",
             "outputPath": "dist/apps/barberos-site"
@@ -40,20 +38,16 @@
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/barberos-site"
-          ],
+          "outputs": ["coverage/apps/barberos-site"],
           "options": {
-            "jestConfig": "apps/barberos-site/jest.config.js",
+            "jestConfig": "apps/barberos-site/jest.config.ts",
             "passWithNoTests": true
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/barberos-site/**/*.{ts,tsx,js,jsx}"
-            ]
+            "lintFilePatterns": ["apps/barberos-site/**/*.{ts,tsx,js,jsx}"]
           }
         }
       },
@@ -80,16 +74,12 @@
         "lint": {
           "executor": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/barberos-site-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/barberos-site-e2e/**/*.{js,ts}"]
           }
         }
       },
       "tags": [],
-      "implicitDependencies": [
-        "barberos-site"
-      ]
+      "implicitDependencies": ["barberos-site"]
     }
   }
 }
