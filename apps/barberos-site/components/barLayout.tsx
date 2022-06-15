@@ -4,6 +4,7 @@ import BarHeader from './barHeader';
 import BarSeparator from './barSeparator';
 import BarFooter from './barFooter';
 import styles from './BarLayout.module.scss';
+import BarMenu from "./barMenu";
 
 type Props = {
   children?: ReactNode;
@@ -19,6 +20,10 @@ const BarLayout = ({ children, title }: Props) => (
     </Head>
     <BarHeader />
     <BarSeparator />
+    <nav className={styles.container}>
+     <BarMenu/>
+    </nav>
+    <BarSeparator />
     <div className={styles.container}>{children}</div>
     <BarFooter />
   </main>
@@ -26,7 +31,7 @@ const BarLayout = ({ children, title }: Props) => (
 
 BarLayout.defaultProps = {
   children: [],
-  title: 'Barberos',
+  title: 'Barberos - Conseil et conception logicielle',
 };
 
 export default BarLayout;

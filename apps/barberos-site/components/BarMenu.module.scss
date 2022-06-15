@@ -1,0 +1,7 @@
+.menu {
+  @apply flex flex-row flex-wrap justify-center items-center px-0 list-none;
+
+  li {
+    @apply px-2;
+  }
+}

@@ -29,7 +29,7 @@ const BarFooter = () => (
       </li>
     </ul>
 
-    <div className={styles.copyright}>Copyright © 2021 – Tous droits réservés</div>
+    <div className={styles.copyright}>Copyright © 2021-2022 – Tous droits réservés</div>
   </footer>
 );
 

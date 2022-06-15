@@ -1,9 +1,29 @@
 .header {
-  @apply w-full;
+  @apply w-full relative top-0 z-50 bg-white;
+}
+
+.stickyHeader {
+  @apply sticky shadow-lg p-1;
+
+  .nav {
+    @apply max-w-screen-md mx-auto justify-between;
+
+    .logo {
+      @apply w-36;
+    }
+
+    .menu {
+      @apply block;
+    }
+  }
 }
 
 .nav {
   @apply flex flex-row justify-center my-4;
+}
+
+.menu {
+  @apply hidden;
 }
 
 .logo {
