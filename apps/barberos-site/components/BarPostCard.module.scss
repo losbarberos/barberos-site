@@ -1,0 +1,19 @@
+.card {
+  @apply shadow-lg rounded bg-white flex flex-row;
+}
+
+.cover {
+  @apply flex-1 relative;
+}
+
+.postInfo {
+  @apply flex-auto w-64 px-2;
+}
+
+.postTitle {
+  @apply text-xl font-bold;
+}
+
+.postSummary {
+  @apply text-sm;
+}
