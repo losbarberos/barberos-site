@@ -80,7 +80,7 @@ const Contact = () => {
       </section>
 
       <h4>
-        <img src="/icons/mail.svg" height="24" />
+        <img src="/icons/mail.svg" alt="" className="h-6" />
         Envoyer un message
       </h4>
 

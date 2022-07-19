@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Oxygen:wght@400;700&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
+  --bar-default-font-family: Oxygen, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --bar-title-font-family: Cairo, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 0;
   margin: 0;
-  font-family: Oxygen, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--bar-default-font-family);
 }
 
 a {
@@ -18,16 +24,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Cairo, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: var(--bar-title-font-family);
   font-weight: bold;
 }
 
 h1 {
-  @apply text-center text-3xl;
+  @apply text-center text-3xl mb-4;
 }
 
 h4 {
-  @apply text-center text-xl;
+  @apply flex flex-row text-center justify-center text-xl mt-6 mb-4;
 
   img {
     @apply align-middle mr-2;

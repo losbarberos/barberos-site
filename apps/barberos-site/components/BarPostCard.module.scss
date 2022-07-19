@@ -1,17 +1,18 @@
 .card {
-  @apply shadow-lg rounded bg-white flex flex-row;
+  @apply shadow-lg rounded bg-white flex flex-col md:flex-row;
 }
 
 .cover {
-  @apply flex-1 relative;
+  @apply flex-grow relative h-36 md:h-auto;
 }
 
 .postInfo {
-  @apply flex-auto w-64 px-2;
+  @apply flex-auto px-2;
 }
 
 .postTitle {
-  @apply text-xl font-bold;
+  font-family: var(--bar-default-font-family);
+  @apply text-xl font-bold mb-5 mt-3;
 }
 
 .postSummary {

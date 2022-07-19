@@ -1,7 +1,7 @@
 import BarLayout from '../components/barLayout';
 
 const LegalMentions = () => (
-  <BarLayout>
+  <BarLayout title="Barberos - Mentions légales">
     <h1>Mentions légales</h1>
     <p className="notice">En vigueur au 15/08/2021</p>
     <p>
