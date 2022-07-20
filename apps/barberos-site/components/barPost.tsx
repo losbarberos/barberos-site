@@ -1,5 +1,7 @@
 import styles from './BarPost.module.scss';
 import Image from "next/image";
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import {Post} from "../services/blog";
 import BarPostAuthorAndCreatedAt from "./barPostAuthorAndCreatedAt";
 import BarTagContainer from "./barTagContainer";
@@ -20,7 +22,11 @@ const BarPost = ({post}: BarPostProps) => {
         <Image src={post.coverUrl} alt={post.title} layout="fill" objectFit="cover"/>
       </div>
 
-      <div className="text-xs mt-8">{post.content}</div>
+      <div className="text-xs mt-8">
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {post.content}
+        </ReactMarkdown>
+      </div>
     </div>
   );
 }

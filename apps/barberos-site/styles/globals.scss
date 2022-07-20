@@ -38,14 +38,22 @@ h4 {
   img {
     @apply align-middle mr-2;
   }
+
+  em {
+    @apply pl-1;
+  }
 }
 
 p {
-  @apply text-justify;
+  @apply my-4;
 
   &.notice {
     @apply text-center;
   }
+}
+
+ul {
+  @apply my-4 pl-10;
 }
 
 .form-actions {
