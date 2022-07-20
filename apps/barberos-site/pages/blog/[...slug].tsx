@@ -10,7 +10,7 @@ const BlogPost = () => {
   const post = slug ? new BlogProvider().getBySlug(slug as string[]) : undefined;
 
   return (
-    <BarLayout>
+    <BarLayout title={"Barberos - " + (post ? post.title : 'Post not found')}>
       <h1>Blog</h1>
 
       { post ? <BarPost post={post}/> : <p>Post not found</p> }

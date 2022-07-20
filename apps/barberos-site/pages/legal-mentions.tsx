@@ -23,16 +23,14 @@ const LegalMentions = () => (
     <p>
       L&apos;hébergeur du site <a href="https://barberos.fr">barberos.fr</a> est la Société Google, dont le siège social est situé à :
     </p>
-    <p>
-      <blockquote>
-        Mountain View
-        <br />
-        1600 Amphitheatre Parkway
-        <br />
-        Mountain View, CA 94043
-        <br />
-        États-Unis
-      </blockquote>
+    <p className="ml-10">
+      Mountain View
+      <br />
+      1600 Amphitheatre Parkway
+      <br />
+      Mountain View, CA 94043
+      <br />
+      États-Unis
     </p>
     <h5>ARTICLE 3 : Accès au site</h5>
     <p>

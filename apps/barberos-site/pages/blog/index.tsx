@@ -5,7 +5,7 @@ import {BlogProvider} from "../../services/blog";
 const blog = new BlogProvider().get();
 
 const BlogPosts = () => (
-  <BarLayout>
+  <BarLayout title="Barberos - Blog">
     <h1>Blog</h1>
 
     {blog.posts.map(post => (

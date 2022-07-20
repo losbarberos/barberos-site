@@ -22,7 +22,7 @@ const BarPost = ({post}: BarPostProps) => {
         <Image src={post.coverUrl} alt={post.title} layout="fill" objectFit="cover"/>
       </div>
 
-      <div className="text-xs mt-8">
+      <div className="mt-8">
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {post.content}
         </ReactMarkdown>

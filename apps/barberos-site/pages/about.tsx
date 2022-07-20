@@ -1,5 +1,4 @@
 import BarLayout from '../components/barLayout';
-import Head from "next/head";
 
 const About = () => (
   <BarLayout title="Barberos - À propos">
