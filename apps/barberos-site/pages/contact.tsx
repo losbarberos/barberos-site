@@ -79,8 +79,8 @@ const Contact = () => {
         <div>contact@barberos.fr</div>
       </section>
 
-      <h4>
-        <img src="/icons/mail.svg" height="24" />
+      <h4 className="flex flex-row justify-center items-center">
+        <img src="/icons/mail.svg" height="24" className="h-6 w-6" />
         Envoyer un message
       </h4>
 

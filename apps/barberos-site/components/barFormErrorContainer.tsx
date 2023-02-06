@@ -1,9 +1,8 @@
 import { ReactNode } from 'react';
-import styles from './BarFormErrorContainer.module.scss';
 
 type Props = {
   children?: ReactNode;
 };
-const BarFormErrorContainer = ({ children }: Props) => <div className={styles.errorMessage}>{children}</div>;
+const BarFormErrorContainer = ({ children }: Props) => <div className="mb-2 text-red-500 text-sm">{children}</div>;
 
 export default BarFormErrorContainer;

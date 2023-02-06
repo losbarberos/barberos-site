@@ -1,12 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './BarHeader.module.scss';
 
 const BarHeader = () => (
-  <header className={ styles.header }>
-    <nav className={ styles.nav }>
+  <header className="w-full">
+    <nav className="flex flex-row justify-center my-4">
       <Link href="/" className="undecorated">
-        <img src="/images/barberos.svg" alt="Barberos" className={ styles.logo } />
+        <img src="/images/barberos.svg" alt="Barberos" className="w-48" />
       </Link>
     </nav>
   </header>

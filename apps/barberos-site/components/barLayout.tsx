@@ -3,7 +3,6 @@ import Head from 'next/head';
 import BarHeader from './barHeader';
 import BarSeparator from './barSeparator';
 import BarFooter from './barFooter';
-import styles from './BarLayout.module.scss';
 
 type Props = {
   children?: ReactNode;
@@ -11,7 +10,7 @@ type Props = {
 };
 
 const BarLayout = ({ children, title }: Props) => (
-  <main className={styles.layout}>
+  <main className="min-h-screen w-full">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
@@ -19,7 +18,7 @@ const BarLayout = ({ children, title }: Props) => (
     </Head>
     <BarHeader />
     <BarSeparator />
-    <div className={styles.container}>{children}</div>
+    <div className="px-2 max-w-screen-md mx-auto">{children}</div>
     <BarFooter />
   </main>
 );

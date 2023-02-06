@@ -1,9 +1,8 @@
 import React from 'react';
-import styles from './BarSeparator.module.scss';
 
 const BarSeparator = () => (
-  <div className={styles.separator}>
-    <img src="/images/horizontal-separator.svg" alt="---" className={styles.separatorImg} />
+  <div className="flex justify-center">
+    <img src="/images/horizontal-separator.svg" alt="---" className="h-4" />
   </div>
 );
 
