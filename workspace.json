@@ -15,7 +15,9 @@
           },
           "configurations": {
             "production": {},
-            "development": {}
+            "development": {
+              "outputPath": "apps/barberos-site"
+            }
           },
           "defaultConfiguration": "production"
         },
@@ -45,7 +47,7 @@
         },
         "test": {
           "executor": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/barberos-site"],
+          "outputs": ["{workspaceRoot}/coverage/apps/barberos-site"],
           "options": {
             "jestConfig": "apps/barberos-site/jest.config.ts",
             "passWithNoTests": true

@@ -8,18 +8,18 @@ const BarFooter = () => (
 
     <ul className={styles.links}>
       <li>
-        <Link href="/about">
-          <a className="undecorated">À propos</a>
+        <Link href="/about" className="undecorated">
+          À propos
         </Link>
       </li>
       <li>
-        <Link href="/legal-mentions">
-          <a className="undecorated">Mentions légales</a>
+        <Link href="/legal-mentions" className="undecorated">
+          Mentions légales
         </Link>
       </li>
       <li>
-        <Link href="/contact">
-          <a className="undecorated">Contact</a>
+        <Link href="/contact" className="undecorated">
+          Contact
         </Link>
       </li>
       <li>
