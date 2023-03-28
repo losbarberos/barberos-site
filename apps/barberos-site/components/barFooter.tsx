@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const BarFooter = () => (
   <footer className="text-[#ffffff] bg-[#555555] mt-12 py-4">
-    <div className="text-[#aaa] font-bold text-xl text-center">Barberos EURL</div>
+    <div className="text-[#aaa] font-bold text-xl text-center">Barberos SARL</div>
 
     <ul className="list-none list-outside p-0">
       <li className="w-full my-2 text-center">
@@ -28,7 +28,7 @@ const BarFooter = () => (
       </li>
     </ul>
 
-    <div className="text-xs text-center mt-2">Copyright © 2021 – Tous droits réservés</div>
+    <div className="text-xs text-center mt-2">Copyright © 2021-2023 – Tous droits réservés</div>
   </footer>
 );
 

@@ -50,7 +50,7 @@ const Contact = () => {
 
       <section>
         <div>
-          <strong>Barberos EURL</strong>
+          <strong>Barberos SARL</strong>
         </div>
         <div>Siren : 902 205 202</div>
       </section>
