@@ -10,7 +10,7 @@ type Props = {
 };
 
 const BarLayout = ({ children, title }: Props) => (
-  <main className="min-h-screen w-full">
+  <main className="min-h-screen h-full w-full flex flex-col">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
@@ -19,6 +19,7 @@ const BarLayout = ({ children, title }: Props) => (
     <BarHeader />
     <BarSeparator />
     <div className="px-2 max-w-screen-md mx-auto">{children}</div>
+    <div className="flex-1"></div>
     <BarFooter />
   </main>
 );
