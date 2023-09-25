@@ -12,6 +12,11 @@ const BarFooter = () => (
         </Link>
       </li>
       <li className="w-full my-2 text-center">
+        <Link href="/portfolio" className="undecorated">
+          Portfolio
+        </Link>
+      </li>
+      <li className="w-full my-2 text-center">
         <Link href="/legal-mentions" className="undecorated">
           Mentions légales
         </Link>
