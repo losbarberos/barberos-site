@@ -1,6 +1,6 @@
-import BarLayout from '../components/barLayout';
+import BarLayout from '../../components/barLayout';
 
-const About = () => (
+const Page = () => (
   <BarLayout>
     <h1>À propos</h1>
 
@@ -24,4 +24,4 @@ const About = () => (
   </BarLayout>
 );
 
-export default About;
+export default Page;

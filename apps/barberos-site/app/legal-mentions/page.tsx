@@ -1,6 +1,6 @@
-import BarLayout from '../components/barLayout';
+import BarLayout from '../../components/barLayout';
 
-const LegalMentions = () => (
+const Page = () => (
   <BarLayout>
     <h1>Mentions légales</h1>
     <p className="notice">En vigueur au 27/03/2023</p>
@@ -65,4 +65,4 @@ const LegalMentions = () => (
   </BarLayout>
 );
 
-export default LegalMentions;
+export default Page;

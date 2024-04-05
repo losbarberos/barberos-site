@@ -1,7 +1,7 @@
-import BarLayout from '../../components/barLayout';
+import BarLayout from '../../../components/barLayout';
 import Link from "next/link";
 
-const TermsAndConditions = () => (
+const Page = () => (
   <BarLayout>
     <h1>Terms and Conditions</h1>
 
@@ -68,4 +68,4 @@ const TermsAndConditions = () => (
   </BarLayout>
 );
 
-export default TermsAndConditions;
+export default Page;

@@ -1,7 +1,7 @@
-import BarLayout from '../../components/barLayout';
+import BarLayout from '../../../components/barLayout';
 import Link from "next/link";
 
-const PrivacyPolicy = () => (
+const Page = () => (
   <BarLayout>
     <h1>Privacy Policy</h1>
 
@@ -88,4 +88,4 @@ const PrivacyPolicy = () => (
   </BarLayout>
 );
 
-export default PrivacyPolicy;
+export default Page;

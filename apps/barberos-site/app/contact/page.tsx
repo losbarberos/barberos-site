@@ -1,11 +1,13 @@
+'use client';
+
 import { ErrorMessage, Form, Formik } from 'formik';
 import { useState } from 'react';
-import BarLayout from '../components/barLayout';
-import BarTextfield from '../components/barTextfield';
-import BarTextarea from '../components/barTextarea';
-import BarButton from '../components/barButton';
-import BarFormErrorContainer from '../components/barFormErrorContainer';
-import { contactUs } from '../services/contact';
+import BarLayout from '../../components/barLayout';
+import BarTextfield from '../../components/barTextfield';
+import BarTextarea from '../../components/barTextarea';
+import BarButton from '../../components/barButton';
+import BarFormErrorContainer from '../../components/barFormErrorContainer';
+import { contactUs } from '../../services/contact';
 
 type Values = {
   fromName: string;
@@ -20,7 +22,7 @@ type Errors = {
   body?: string;
 };
 
-const Contact = () => {
+const Page = () => {
   function validate() {
     return (values: Values): Errors => {
       const errors: Errors = {};
@@ -79,7 +81,7 @@ const Contact = () => {
         <div>contact@barberos.fr</div>
       </section>
 
-      <h4 className="flex flex-row justify-center items-center">
+      <h4 className="flex flex-row justify-center items-center contact-form-title">
         <img src="/icons/mail.svg" height="24" className="h-6 w-6" />
         Envoyer un message
       </h4>
@@ -125,4 +127,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Page;

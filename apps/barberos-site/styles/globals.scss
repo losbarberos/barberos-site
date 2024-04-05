@@ -71,6 +71,12 @@ p {
   }
 }
 
+.contact-form-title {
+  img {
+    @apply w-6;
+  }
+}
+
 .offer-line {
   @apply flex flex-col lg:flex-row mt-10 items-center;
 
