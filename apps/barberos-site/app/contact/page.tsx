@@ -2,11 +2,10 @@
 
 import { ErrorMessage, Form, Formik } from 'formik';
 import { useState } from 'react';
-import BarLayout from '../../components/barLayout';
-import BarTextfield from '../../components/barTextfield';
-import BarTextarea from '../../components/barTextarea';
-import BarButton from '../../components/barButton';
-import BarFormErrorContainer from '../../components/barFormErrorContainer';
+import BarTextfield from '../../components/bar-textfield';
+import BarTextarea from '../../components/bar-textarea';
+import BarButton from '../../components/bar-button';
+import BarFormErrorContainer from '../../components/bar-form-error-container';
 import { contactUs } from '../../services/contact';
 
 type Values = {
@@ -22,7 +21,7 @@ type Errors = {
   body?: string;
 };
 
-const Page = () => {
+export default function Page() {
   function validate() {
     return (values: Values): Errors => {
       const errors: Errors = {};
@@ -47,7 +46,7 @@ const Page = () => {
   const [resultMessage, setResultMessage] = useState<string>();
 
   return (
-    <BarLayout>
+    <>
       <h1>Contact</h1>
 
       <section>
@@ -123,8 +122,6 @@ const Page = () => {
           </Form>
         )}
       </Formik>
-    </BarLayout>
+    </>
   );
 };
-
-export default Page;

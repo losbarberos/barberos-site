@@ -1,27 +1,35 @@
-import BarLayout from '../../components/barLayout';
+import { Metadata } from "next";
 
-const Page = () => (
-  <BarLayout>
-    <h1>À propos</h1>
+export const metadata: Metadata = {
+  title: 'Barberos — À propos',
+};
 
-    <h4>Une équipe de développement passionnée 🔥</h4>
+export default function Page() {
+  return (
+    <>
+      <h1>À propos</h1>
 
-    <p>
-      Dans la sphère professionnelle du développement d’applications Web complexes depuis plus de 15 ans, notre équipe a acquis une solide expertise dans
-      la conception d’applications performantes et résiliantes ainsi que dans leur exploitation. En bout de chaîne, notre équipe maîtrise aussi la conception
-      d’applications clientes riches en front-end, adaptés aux usages actuels (ordinateur, tablette, smartphone).
-    </p>
+      <h4>Une équipe de développement passionnée 🔥</h4>
 
-    <p>
-      Pour les applications complexes, notre équipe exploite aussi les processus d’industrialisation à travers le montage d’usine logicielle
-      (intégration continue, vérification automatique de qualité, déploiement continu).
-    </p>
+      <p>
+        Dans la sphère professionnelle du développement d’applications Web complexes depuis plus de 15 ans, notre équipe
+        a acquis une solide expertise dans
+        la conception d’applications performantes et résiliantes ainsi que dans leur exploitation. En bout de chaîne,
+        notre équipe maîtrise aussi la conception
+        d’applications clientes riches en front-end, adaptés aux usages actuels (ordinateur, tablette, smartphone).
+      </p>
 
-    <p>
-      Notre équipe ayant le goût du challenge, nous recherchons toujours la meilleure solution pour résoudre des problèmes dans votre
-      logique métier.
-    </p>
-  </BarLayout>
-);
+      <p>
+        Pour les applications complexes, notre équipe exploite aussi les processus d’industrialisation à travers le
+        montage d’usine logicielle
+        (intégration continue, vérification automatique de qualité, déploiement continu).
+      </p>
 
-export default Page;
+      <p>
+        Notre équipe ayant le goût du challenge, nous recherchons toujours la meilleure solution pour résoudre des
+        problèmes dans votre
+        logique métier.
+      </p>
+    </>
+  );
+};
