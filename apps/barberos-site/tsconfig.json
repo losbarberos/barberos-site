@@ -5,11 +5,7 @@
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "types": [
-      "node",
-      "jest"
-    ],
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "resolveJsonModule": true,
@@ -19,19 +15,17 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "types": ["jest", "node"]
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx",
-    "next-env.d.ts",
+    "../../apps/barberos-site/.next/types/**/*.ts",
     "../../dist/apps/barberos-site/.next/types/**/*.ts",
-    ".next/types/**/*.ts"
+    "next-env.d.ts"
   ],
-  "exclude": [
-    "node_modules",
-    "jest.config.ts"
-  ]
+  "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
 }
