@@ -2,11 +2,11 @@
 
 import { ErrorMessage, Form, Formik } from 'formik';
 import { useState } from 'react';
-import BarTextfield from '../../components/bar-textfield';
-import BarTextarea from '../../components/bar-textarea';
-import BarButton from '../../components/bar-button';
-import BarFormErrorContainer from '../../components/bar-form-error-container';
-import { contactUs } from '../../services/contact';
+import BarTextfield from '@/components/bar-textfield';
+import BarTextarea from '@/components/bar-textarea';
+import BarButton from '@/components/bar-button';
+import BarFormErrorContainer from '@/components/bar-form-error-container';
+import { contactUs } from '@/services/contact';
 
 type Values = {
   fromName: string;
