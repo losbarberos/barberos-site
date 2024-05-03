@@ -18,11 +18,11 @@ export const viewport: Viewport = {
 
 export default function Layout({ children }: PropsWithChildren) {
   return (
-    <html lang="fr">
-      <body className="h-full">
+    <html lang="fr" className="h-full">
+      <body className="h-full flex flex-col">
         <BarHeader />
         <BarSeparator />
-        <main className="w-full mb-4">
+        <main className="w-full mb-12 flex-grow">
           <div className="px-2 max-w-screen-md mx-auto">{children}</div>
         </main>
         <BarFooter />

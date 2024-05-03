@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const BarFooter = () => (
-  <footer className="text-[#ffffff] bg-[#555555] relative bottom-0 py-4">
+  <footer className="text-[#ffffff] bg-[#555555] flex-shrink-0 py-4">
     <div className="text-[#aaa] font-bold text-xl text-center">Barberos SARL</div>
 
     <ul className="list-none list-outside p-0">
