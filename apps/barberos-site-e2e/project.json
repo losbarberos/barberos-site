@@ -2,26 +2,8 @@
   "name": "barberos-site-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/barberos-site-e2e/src",
-  "projectType": "application",
-  "tags": [],
   "implicitDependencies": ["barberos-site"],
-  "targets": {
-    "e2e": {
-      "executor": "@nx/cypress:cypress",
-      "options": {
-        "cypressConfig": "apps/barberos-site-e2e/cypress.json",
-        "tsConfig": "apps/barberos-site-e2e/tsconfig.e2e.json",
-        "devServerTarget": "barberos-site:serve"
-      },
-      "configurations": {
-        "production": {
-          "devServerTarget": "barberos-site:serve:production"
-        }
-      }
-    },
-    "lint": {
-      "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
-    }
-  }
+  "// targets": "to see all targets run: nx show project barberos-site-e2e --web",
+  "targets": {}
 }
+

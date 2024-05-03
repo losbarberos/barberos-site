@@ -4,55 +4,6 @@
   "sourceRoot": "apps/barberos-site",
   "projectType": "application",
   "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/next:build",
-      "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
-      "options": {
-        "outputPath": "dist/apps/barberos-site"
-      },
-      "configurations": {
-        "production": {},
-        "development": {
-          "outputPath": "apps/barberos-site"
-        },
-        "production": {}
-        }
-      },
-    "serve": {
-      "executor": "@nx/next:server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "barberos-site:build",
-        "dev": true
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "barberos-site:build:development",
-          "dev": true
-        },
-        "production": {
-          "buildTarget": "barberos-site:build:production",
-          "dev": false
-        }
-      }
-    },
-    "export": {
-      "executor": "@nx/next:export",
-      "options": {
-        "buildTarget": "barberos-site:build:production"
-      }
-    },
-    "test": {
-      "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
-      "options": {
-        "jestConfig": "apps/barberos-site/jest.config.ts"
-      }
-    },
-    "lint": {
-      "executor": "@nx/eslint:lint"
-    }
-  }
+  "// targets": "to see all targets run: nx show project barberos-site --web",
+  "targets": {}
 }
