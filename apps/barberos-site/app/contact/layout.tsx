@@ -5,6 +5,6 @@ export const metadata: Metadata = {
   title: 'Barberos — Contact',
 };
 
-export default function Layout({ children }: PropsWithChildren<{}>) {
+export default function Layout({ children }: PropsWithChildren) {
   return children;
 }

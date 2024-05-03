@@ -1,8 +1,10 @@
 import React from 'react';
+import Image from "next/image";
+import horizontalSeparator from '../public/images/horizontal-separator.svg';
 
 const BarSeparator = () => (
   <div className="flex justify-center">
-    <img src="/images/horizontal-separator.svg" alt="---" className="h-4" />
+    <Image src={horizontalSeparator} alt="---" className="h-4" />
   </div>
 );
 

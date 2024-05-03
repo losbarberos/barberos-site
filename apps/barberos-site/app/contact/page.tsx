@@ -7,6 +7,11 @@ import BarTextarea from '@/components/bar-textarea';
 import BarButton from '@/components/bar-button';
 import BarFormErrorContainer from '@/components/bar-form-error-container';
 import { contactUs } from '@/services/contact';
+import Image from "next/image";
+import address from '../../public/icons/address.svg';
+import phone from '../../public/icons/phone.svg';
+import email from '../../public/icons/email.svg';
+import mail from '../../public/icons/mail.svg';
 
 type Values = {
   fromName: string;
@@ -58,7 +63,7 @@ export default function Page() {
 
       <section className="contact-line">
         <div>
-          <img src="/icons/address.svg" alt="Adresse" />
+          <Image src={address} alt="Adresse" />
         </div>
         <div>
           21 rue Charles Martel
@@ -68,20 +73,20 @@ export default function Page() {
       </section>
       <section className="contact-line">
         <div>
-          <img src="/icons/phone.svg" alt="Téléphone" />
+          <Image src={phone} alt="Téléphone" />
         </div>
         <div>07 80 98 40 00</div>
       </section>
 
       <section className="contact-line">
         <div>
-          <img src="/icons/email.svg" alt="Email" />
+          <Image src={email} alt="Email" />
         </div>
         <div>contact@barberos.fr</div>
       </section>
 
       <h4 className="flex flex-row justify-center items-center contact-form-title">
-        <img src="/icons/mail.svg" height="24" className="h-6 w-6" />
+        <Image alt="Message" src={mail} height="24" className="h-6 w-6" />
         Envoyer un message
       </h4>
 
@@ -123,5 +128,5 @@ export default function Page() {
         )}
       </Formik>
     </>
-  );
-};
+  )
+}

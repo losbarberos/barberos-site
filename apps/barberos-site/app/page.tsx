@@ -1,3 +1,8 @@
+import Image from "next/image";
+import support from '../public/images/support.svg';
+import technology from '../public/images/technology.svg';
+import career from '../public/images/career.svg';
+
 export default function Page() {
   return (
     <>
@@ -6,7 +11,7 @@ export default function Page() {
         CRM, ERP.</p>
 
       <section className="offer-line">
-        <img src="/images/support.svg" />
+        <Image alt="Support" src={support} />
         <div>
           <h4>
             Accompagnement <em>sur-mesure</em>
@@ -38,7 +43,7 @@ export default function Page() {
       </section>
 
       <section className="offer-line offer-line-even">
-        <img src="/images/technology.svg" />
+        <Image alt="Technologie" src={technology} />
         <div>
           <h4>
             Transformation <em>numérique</em>
@@ -66,7 +71,7 @@ export default function Page() {
       </section>
 
       <section className="offer-line">
-        <img src="/images/career.svg" />
+        <Image alt="Formations" src={career} />
         <div>
           <h4>
             Formations <em>techniques</em>
@@ -83,4 +88,4 @@ export default function Page() {
       </section>
     </>
   );
-};
+}
