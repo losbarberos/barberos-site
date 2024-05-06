@@ -1,6 +1,6 @@
 [build]
 command = "npm run build"
-publish = "dist/apps/barberos-site/.next"
+publish = "apps/barberos-site/.next"
 
 [dev]
 command = "npm run start"
