@@ -24,16 +24,16 @@ const BarHeader = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, [stickyHeader]);
 
-  let stickyHeaderStyle = '';
+  let stickyHeaderStyle = 'relative';
   let stickyLogoStyle = '';
   if (stickyHeader) {
-    stickyHeaderStyle = 'sticky shadow-lg p-1';
-    stickyLogoStyle = '!w-36 my-6';
+    stickyHeaderStyle = 'fixed shadow-lg p-1';
+    stickyLogoStyle = '!w-36 md:my-6';
   }
 
   return (
-    <header className={`w-full relative top-0 z-50 bg-white ${stickyHeaderStyle}`}>
-      <nav className={`flex flex-row my-4 max-w-screen-md mx-auto justify-between`}>
+    <header className={`w-full top-0 z-50 bg-white ${stickyHeaderStyle}`}>
+      <nav className={`flex flex-col items-center gap-6 md:flex-row my-4 max-w-screen-md mx-auto justify-between`}>
         <Link href="/" className="undecorated">
           <Image src={logo} alt="Barberos" className={`w-48 ${stickyLogoStyle}`} />
         </Link>

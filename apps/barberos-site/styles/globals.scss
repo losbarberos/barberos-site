@@ -108,11 +108,11 @@ em {
 }
 
 a {
-  @apply border-0 border-b border-solid border-bar-red-500 text-bar-red-500 transition;
+  @apply border-0 border-solid border-bar-red-500 text-bar-red-500 transition;
 
   &:focus,
   &:hover {
-    @apply border-bar-red-200 duration-200 ease-in;
+    @apply border-b border-bar-red-200 duration-200 ease-in;
   }
 
   &.undecorated {

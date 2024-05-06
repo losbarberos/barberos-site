@@ -7,7 +7,7 @@ type BarMenuItemProps = {
 };
 
 const BarMenuItem = ({ href, children }: BarMenuItemProps) => (
-  <li className="px-2">
+  <li className="mx-2">
     <Link href={href}>
       {children}
     </Link>
