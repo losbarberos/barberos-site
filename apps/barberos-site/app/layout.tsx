@@ -4,6 +4,8 @@ import BarSeparator from '@/components/bar-separator';
 import BarFooter from '@/components/bar-footer';
 import React, { PropsWithChildren } from 'react';
 import { Metadata, Viewport } from 'next';
+import { StickyLayoutProvider } from '../providers/sticky-layout';
+import { BarMain } from '@/components/bar-main';
 
 export const metadata: Metadata = {
   title: 'Barberos',
@@ -20,12 +22,12 @@ export default function Layout({ children }: PropsWithChildren) {
   return (
     <html lang="fr" className="h-full">
       <body className="h-full flex flex-col">
-        <BarHeader />
-        <BarSeparator />
-        <main className="w-full mb-12 flex-grow">
-          <div className="px-2 max-w-screen-md mx-auto">{children}</div>
-        </main>
-        <BarFooter />
+        <StickyLayoutProvider>
+          <BarHeader />
+          <BarSeparator />
+          <BarMain>{children}</BarMain>
+          <BarFooter />
+        </StickyLayoutProvider>
       </body>
     </html>
   );
