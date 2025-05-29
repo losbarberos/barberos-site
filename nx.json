@@ -52,5 +52,6 @@
     }
   },
   "defaultProject": "barberos-site",
-  "defaultBase": "main"
+  "defaultBase": "main",
+  "nxCloudId": "6838bbf168c808175e136f8d"
 }
