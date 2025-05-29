@@ -1,7 +1,10 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "default": [
+      "{projectRoot}/**/*",
+      "sharedGlobals"
+    ],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
@@ -53,5 +56,5 @@
   },
   "defaultProject": "barberos-site",
   "defaultBase": "main",
-  "nxCloudId": "6838bbf168c808175e136f8d"
+  "nxCloudAccessToken": "ZDViMzBkYmUtMTk1OS00ZjM4LTk4NjYtNjg5MWY3MTExMmE4fHJlYWQtd3JpdGU="
 }
