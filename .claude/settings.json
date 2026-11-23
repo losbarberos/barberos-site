@@ -1,0 +1,51 @@
+{
+  "extraKnownMarketplaces": {
+    "nx-claude-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "nrwl/nx-ai-agents-config"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "nx@nx-claude-plugins": true
+  },
+  "permissions": {
+    "allow": [
+      "Bash(yarn nx build:*)",
+      "Bash(yarn nx test:*)",
+      "Bash(yarn nx lint:*)",
+      "Bash(yarn nx format:check:*)",
+      "Bash(yarn nx format:write:*)",
+      "Bash(yarn nx run-many:*)",
+      "Bash(yarn nx affected:*)",
+      "Bash(yarn nx show:*)",
+      "Bash(yarn nx graph:*)",
+      "Bash(yarn build)",
+      "Bash(yarn test)",
+      "Bash(yarn lint)",
+      "Bash(yarn format:check)"
+    ],
+    "ask": [
+      "Bash(yarn install:*)",
+      "Bash(yarn add:*)",
+      "Bash(yarn remove:*)",
+      "Bash(yarn up:*)",
+      "Bash(yarn nx migrate:*)",
+      "Bash(git push:*)",
+      "Bash(gh workflow run:*)",
+      "Bash(netlify:*)",
+      "Bash(npx netlify:*)",
+      "Bash(firebase:*)"
+    ]
+  },
+  "sandbox": {
+    "filesystem": {
+      "allowRead": ["/tmp/.nx", "~/.nx"],
+      "allowWrite": ["/tmp/.nx", "~/.nx"]
+    },
+    "network": {
+      "allowUnixSockets": ["/tmp/.nx", "~/.nx"]
+    }
+  }
+}
