@@ -16,27 +16,15 @@
         "name": "next"
       }
     ],
-    "types": [
-      "jest",
-      "node"
-    ],
+    "types": ["jest", "node"],
     "paths": {
-      "@/components/*": [
-        "apps/barberos-site/components/*"
-      ],
-      "@/lib/*": [
-        "apps/barberos-site/lib/*"
-      ],
-      "@/styles/*": [
-        "apps/barberos-site/styles/*"
-      ],
-      "@/data/*": [
-        "apps/barberos-site/data/*"
-      ],
-      "@/services/*": [
-        "apps/barberos-site/services/*"
-      ],
-    }
+      "@/components/*": ["apps/barberos-site/components/*"],
+      "@/lib/*": ["apps/barberos-site/lib/*"],
+      "@/styles/*": ["apps/barberos-site/styles/*"],
+      "@/data/*": ["apps/barberos-site/data/*"],
+      "@/services/*": ["apps/barberos-site/services/*"]
+    },
+    "ignoreDeprecations": "6.0"
   },
   "include": [
     "**/*.ts",
@@ -48,10 +36,5 @@
     "next-env.d.ts",
     ".next/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules",
-    "jest.config.ts",
-    "**/*.spec.ts",
-    "**/*.test.ts"
-  ]
+  "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
 }

@@ -1,20 +1,19 @@
 [build]
-command = "npm run build"
+command = "pnpm run build"
 publish = "apps/barberos-site/.next"
 
 [dev]
-command = "npm run start"
-targetPort = 4200
+command = "pnpm run start"
+targetPort = 3000
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
 
 [build.environment]
-# cache Cypress binary in local "node_modules" folder
-# so Netlify caches it
-CYPRESS_CACHE_FOLDER = "../node_modules/.CypressBinary"
 # set TERM variable for terminal output
 TERM = "xterm"
+# Netlify runs `pnpm install` (pnpm-lock.yaml); its docs ask Next.js sites to hoist dependencies
+PNPM_FLAGS = "--shamefully-hoist"
 
 [[plugins]]
 package = "@netlify/plugin-local-install-core"

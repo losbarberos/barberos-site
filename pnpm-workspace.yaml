@@ -1,0 +1,16 @@
+# pnpm settings (pnpm 11+ no longer reads the `pnpm` field of package.json; .npmrc holds only the registry)
+
+# Packages whose install scripts may run (true) or are skipped without warning (false)
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  esbuild: true
+  nx: true
+  core-js: false
+  cypress: false
+  protobufjs: false
+
+packageExtensions:
+  eslint-config-next@*:
+    peerDependencies:
+      next: '*'

@@ -1,13 +1,10 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
-      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/eslint.config.mjs",
       "!{projectRoot}/eslint.config.js",
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
       "!{projectRoot}/tsconfig.spec.json",
@@ -56,5 +53,8 @@
   },
   "defaultProject": "barberos-site",
   "defaultBase": "main",
-  "nxCloudAccessToken": "ZDViMzBkYmUtMTk1OS00ZjM4LTk4NjYtNjg5MWY3MTExMmE4fHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "ZDViMzBkYmUtMTk1OS00ZjM4LTk4NjYtNjg5MWY3MTExMmE4fHJlYWQtd3JpdGU=",
+  "affected": {
+    "legacy": true
+  }
 }
