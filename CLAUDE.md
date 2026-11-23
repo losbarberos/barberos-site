@@ -11,7 +11,8 @@ a handful of static pages presenting the services, the portfolio, the company an
 
 ## Stack & layout
 
-Nx 21 workspace, Yarn 4 (`node-modules` linker), Node 20 in CI.
+Nx 24 workspace, pnpm 12 (version pinned by `packageManager`; settings in `pnpm-workspace.yaml`, `.npmrc` only holds the
+registry), Node 20 in CI.
 
 - `apps/barberos-site` — the site: Next.js 14 **App Router**, React 18, Tailwind 3 + one global Sass file
   (`styles/globals.scss`). Every page is pre-rendered as static content at build time.
@@ -42,15 +43,15 @@ Nx 21 workspace, Yarn 4 (`node-modules` linker), Node 20 in CI.
 
 ## Commands
 
-Run tasks through Nx (`yarn nx …`, or the root scripts that wrap it).
+Run tasks through Nx (`pnpm nx …`, or the root scripts that wrap it).
 
 ```sh
-yarn start                           # dev server (nx dev barberos-site), http://localhost:3000
-yarn nx build barberos-site          # production build (also type-checks)
-yarn nx test barberos-site           # Jest + Testing Library
-yarn nx lint barberos-site           # ESLint
-yarn nx format:check                 # Prettier, changed files only (format:write to fix)
-yarn nx run-many -t lint test build  # everything
+pnpm start                           # dev server (nx dev barberos-site), http://localhost:3000
+pnpm nx build barberos-site          # production build (also type-checks; does not lint)
+pnpm nx test barberos-site           # Jest + Testing Library
+pnpm nx lint barberos-site           # ESLint
+pnpm nx format:check                 # Prettier, changed files only (format:write to fix)
+pnpm nx run-many -t lint test build  # everything
 ```
 
 In Jest, static image imports resolve to `specs/mocks/static-image.js` (see `jest.config.ts`), so components

@@ -1,22 +1,8 @@
 //@ts-check
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { composePlugins, withNx } = require('@nx/next');
+// Plain Next.js config: `withNx` / `composePlugins` are deprecated no-op stubs in Nx 24 (removed in Nx 25). The former
+// `nx.svgr: false` option had no effect (SVGs are imported as static images and rendered with next/image).
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-/**
- * @type {import('@nx/next/plugins/with-nx').WithNxOptions}
- **/
-const nextConfig = {
-  nx: {
-    // Set this to true if you would like to use SVGR
-    // See: https://github.com/gregberge/svgr
-    svgr: false,
-  },
-};
-
-const plugins = [
-  // Add more Next.js plugins to this list if needed.
-  withNx,
-];
-
-module.exports = composePlugins(...plugins)(nextConfig);
+module.exports = nextConfig;

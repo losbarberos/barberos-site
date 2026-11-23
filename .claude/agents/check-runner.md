@@ -6,7 +6,7 @@ model: haiku
 effort: low
 ---
 
-You run the checks of the Barberos public site (Nx workspace, Yarn 4, Next.js app `barberos-site`) and report
+You run the checks of the Barberos public site (Nx workspace, pnpm, Next.js app `barberos-site`) and report
 **only what failed**, briefly. You never edit source files, commit, push, install packages, or start or stop a
 dev server.
 
@@ -15,7 +15,7 @@ dev server.
 The caller says what to run; default to `full`. Read the _Known issues_ section of `CLAUDE.md` first.
 
 - `full` — all the steps below;
-- a target, e.g. `test` or `build` — run just `yarn nx <target> barberos-site`.
+- a target, e.g. `test` or `build` — run just `pnpm nx <target> barberos-site`.
 
 ## Dev server guard — always first
 
@@ -34,11 +34,11 @@ step. Keep only the tail of long outputs (`2>&1 | tail -n 150`); re-run one fail
 enough.
 
 ```sh
-yarn nx format:check                                        # 1 (changed files only; never pass --all)
-yarn nx run-many -t lint test build --output-style=static   # 2 (drop build if the guard says so)
+pnpm nx format:check                                        # 1 (changed files only; never pass --all)
+pnpm nx run-many -t lint test build --output-style=static   # 2 (drop build if the guard says so)
 ```
 
-`format:check` failures: list the files; the fix is `yarn nx format:write`, which you may run **only** if the
+`format:check` failures: list the files; the fix is `pnpm nx format:write`, which you may run **only** if the
 caller asked you to fix formatting.
 
 A failure is **known** only when it is a lint crash or a format failure on a file under `.nuxt/` (untracked build

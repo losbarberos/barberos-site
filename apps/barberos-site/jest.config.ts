@@ -1,5 +1,5 @@
 /* eslint-disable */
-export default {
+module.exports = {
   displayName: 'barberos-site',
   preset: '../../jest.preset.js',
   transform: {
