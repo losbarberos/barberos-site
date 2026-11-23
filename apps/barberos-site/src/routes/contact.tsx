@@ -7,7 +7,7 @@ import BarTextarea from '@/components/bar-textarea';
 import BarButton from '@/components/bar-button';
 import BarFormErrorContainer from '@/components/bar-form-error-container';
 import { contactUs } from '@/services/contact';
-import Image from "next/image";
+import Image from 'next/image';
 import address from '../../public/icons/address.svg';
 import phone from '../../public/icons/phone.svg';
 import email from '../../public/icons/email.svg';
@@ -128,5 +128,5 @@ export default function Page() {
         )}
       </Formik>
     </>
-  )
+  );
 }
