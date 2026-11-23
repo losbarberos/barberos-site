@@ -81,7 +81,8 @@ reformatting in its own commit when it makes the diff hard to read).
 The site is hosted on Netlify (`netlify.toml`, static publish of `dist/apps/barberos-site/client`). The **Deploy to Production** workflow
 (`.github/workflows/deploy.yml`, manual `workflow_dispatch`) builds the selected ref and force-pushes it to the
 `netlify` branch, which Netlify deploys. Never run that workflow, push to `netlify` or run a Netlify CLI command
-without the user's explicit request.
+without the user's explicit request. Deployment is separate from the **CI** workflow (`ci.yml`, see Workflow), which only
+checks pull requests and `main`.
 
 ## Workflow
 
@@ -89,7 +90,11 @@ without the user's explicit request.
 - Conventional commits, as in the history: `feat(header): …`, `fix: …`, `chore: …`, `build: …`, `ci: …`.
 - Commit messages have no `Co-Authored-By` trailer.
 - GitHub issues (title and body) are written in French.
-- Keep `lint`, `test`, `build` and `format:check` green before proposing a commit.
+- Keep `lint`, `test`, `typecheck` (`build` runs it), `build` and `format:check` green before proposing a commit.
+- The **CI** workflow (`.github/workflows/ci.yml`) runs `lint`, `test`, `typecheck` and `build` (one step each, through
+  `nx run-many`) on every pull request and every push to `main`. It does not run `format:check`. It uses the Nx Cloud
+  remote cache: the `NX_CLOUD_ACCESS_TOKEN` repository secret when set, else the token committed in `nx.json`
+  (public and read-write: it should be replaced by a read-only one).
 - Update a PR branch by rebasing on `origin/main` and `git push --force-with-lease`; never merge `main` into it.
 - Delegate to the subagents of `.claude/agents/` to keep the main context small:
   - **Run the checks** — the `check-runner` agent runs the Nx targets and returns only the failures, telling new
