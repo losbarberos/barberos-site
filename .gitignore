@@ -8,10 +8,6 @@
 # testing
 /coverage
 
-# next.js
-/.next/
-/out/
-
 # nx dist
 /dist
 
@@ -44,8 +40,13 @@ pnpm-debug.log*
 /.idea
 /.vscode
 
-# Next.js
+# leftovers of the former Next.js build
 .next
+
+# Vite / TanStack Start
+.output
+.tanstack
+.vite
 
 .nx/cache
 .nx/workspace-data

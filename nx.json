@@ -16,12 +16,13 @@
   },
   "plugins": [
     {
-      "plugin": "@nx/next/plugin",
+      "plugin": "@nx/vite/plugin",
       "options": {
-        "startTargetName": "start",
         "buildTargetName": "build",
         "devTargetName": "dev",
-        "serveStaticTargetName": "serve-static"
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck"
       }
     },
     {
@@ -43,14 +44,6 @@
       }
     }
   ],
-  "generators": {
-    "@nx/next": {
-      "application": {
-        "style": "tailwind",
-        "linter": "eslint"
-      }
-    }
-  },
   "defaultProject": "barberos-site",
   "defaultBase": "main",
   "nxCloudAccessToken": "ZDViMzBkYmUtMTk1OS00ZjM4LTk4NjYtNjg5MWY3MTExMmE4fHJlYWQtd3JpdGU=",

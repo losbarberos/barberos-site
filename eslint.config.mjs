@@ -23,6 +23,6 @@ export default [
   ...nx.configs['flat/typescript'],
   ...nx.configs['flat/javascript'],
   {
-    ignores: ['**/*.css', '**/*.svg', '.next'],
+    ignores: ['**/*.css', '**/*.svg', 'dist', '**/.tanstack', '**/.next'],
   },
 ];

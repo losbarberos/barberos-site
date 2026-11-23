@@ -6,7 +6,7 @@ model: haiku
 effort: low
 ---
 
-You run the checks of the Barberos public site (Nx workspace, pnpm, Next.js app `barberos-site`) and report
+You run the checks of the Barberos public site (Nx workspace, pnpm, TanStack Start app `barberos-site`) and report
 **only what failed**, briefly. You never edit source files, commit, push, install packages, or start or stop a
 dev server.
 
@@ -17,16 +17,6 @@ The caller says what to run; default to `full`. Read the _Known issues_ section 
 - `full` — all the steps below;
 - a target, e.g. `test` or `build` — run just `pnpm nx <target> barberos-site`.
 
-## Dev server guard — always first
-
-`next build` writes to the same `.next` folder as the user's dev server and breaks it. Check:
-
-```sh
-lsof -nP -iTCP:3000 -sTCP:LISTEN
-```
-
-Something listens → **skip `build`** (unless the caller says the user allowed it now) and say so in the report.
-
 ## Commands
 
 From the repository root, each with a 10-minute timeout; keep going after a failure so the report covers every
@@ -35,7 +25,7 @@ enough.
 
 ```sh
 pnpm nx format:check                                        # 1 (changed files only; never pass --all)
-pnpm nx run-many -t lint test build --output-style=static   # 2 (drop build if the guard says so)
+pnpm nx run-many -t lint test build --output-style=static   # 2
 ```
 
 `format:check` failures: list the files; the fix is `pnpm nx format:write`, which you may run **only** if the

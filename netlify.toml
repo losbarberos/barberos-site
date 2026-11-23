@@ -1,19 +1,15 @@
+# Static site: `pnpm run build` pre-renders every page into dist/apps/barberos-site/client.
 [build]
 command = "pnpm run build"
-publish = "apps/barberos-site/.next"
+publish = "dist/apps/barberos-site/client"
 
 [dev]
 command = "pnpm run start"
 targetPort = 3000
 
-[[plugins]]
-package = "@netlify/plugin-nextjs"
-
 [build.environment]
 # set TERM variable for terminal output
 TERM = "xterm"
-# Netlify runs `pnpm install` (pnpm-lock.yaml); its docs ask Next.js sites to hoist dependencies
-PNPM_FLAGS = "--shamefully-hoist"
 
 [[plugins]]
 package = "@netlify/plugin-local-install-core"
