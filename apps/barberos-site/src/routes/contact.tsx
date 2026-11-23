@@ -1,5 +1,3 @@
-'use client';
-
 import { ErrorMessage, Form, Formik } from 'formik';
 import { useState } from 'react';
 import BarTextfield from '@/components/bar-textfield';
@@ -7,11 +5,7 @@ import BarTextarea from '@/components/bar-textarea';
 import BarButton from '@/components/bar-button';
 import BarFormErrorContainer from '@/components/bar-form-error-container';
 import { contactUs } from '@/services/contact';
-import Image from 'next/image';
-import address from '../../public/icons/address.svg';
-import phone from '../../public/icons/phone.svg';
-import email from '../../public/icons/email.svg';
-import mail from '../../public/icons/mail.svg';
+import { createFileRoute } from '@tanstack/react-router';
 
 type Values = {
   fromName: string;
@@ -26,7 +20,12 @@ type Errors = {
   body?: string;
 };
 
-export default function Page() {
+export const Route = createFileRoute('/contact')({
+  head: () => ({ meta: [{ title: 'Barberos — Contact' }] }),
+  component: Page,
+});
+
+function Page() {
   function validate() {
     return (values: Values): Errors => {
       const errors: Errors = {};
@@ -63,7 +62,7 @@ export default function Page() {
 
       <section className="contact-line">
         <div>
-          <Image src={address} alt="Adresse" />
+          <img src="/icons/address.svg" alt="Adresse" width="512" height="512" />
         </div>
         <div>
           21 rue Charles Martel
@@ -73,20 +72,20 @@ export default function Page() {
       </section>
       <section className="contact-line">
         <div>
-          <Image src={phone} alt="Téléphone" />
+          <img src="/icons/phone.svg" alt="Téléphone" width="512" height="512" />
         </div>
         <div>07 80 98 40 00</div>
       </section>
 
       <section className="contact-line">
         <div>
-          <Image src={email} alt="Email" />
+          <img src="/icons/email.svg" alt="Email" width="512" height="512" />
         </div>
         <div>contact@barberos.fr</div>
       </section>
 
       <h4 className="flex flex-row justify-center items-center contact-form-title">
-        <Image alt="Message" src={mail} height="24" className="h-6 w-6" />
+        <img alt="Message" src="/icons/mail.svg" height="24" className="h-6 w-6" />
         Envoyer un message
       </h4>
 

@@ -1,7 +1,5 @@
-'use client';
-
 import React, { PropsWithChildren } from 'react';
-import { useStickyLayout } from '../providers/sticky-layout';
+import { useStickyLayout } from '@/providers/sticky-layout';
 
 export const BarMain = ({ children }: PropsWithChildren) => {
   const { sticky } = useStickyLayout();

@@ -1,11 +1,7 @@
-'use client';
-
 import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import logo from '../public/images/barberos.svg';
+import { Link } from '@tanstack/react-router';
 import BarMenu from '@/components/bar-menu';
-import { useStickyLayout } from '../providers/sticky-layout';
+import { useStickyLayout } from '@/providers/sticky-layout';
 
 const BarHeader = () => {
   const { sticky } = useStickyLayout();
@@ -20,8 +16,8 @@ const BarHeader = () => {
   return (
     <header className={`w-full top-0 z-50 bg-white ${stickyHeaderStyle}`}>
       <nav className={`flex flex-col items-center gap-6 md:flex-row my-4 max-w-screen-md mx-auto justify-between`}>
-        <Link href="/" className="undecorated w-32">
-          <Image src={logo} alt="Barberos" className={`h-16 object-contain ${stickyLogoStyle}`} />
+        <Link to="/" className="undecorated w-32">
+          <img src="/images/barberos.svg" alt="Barberos" className={`h-16 object-contain ${stickyLogoStyle}`} />
         </Link>
         <BarMenu />
       </nav>

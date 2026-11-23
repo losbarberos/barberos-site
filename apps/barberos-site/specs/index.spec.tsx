@@ -1,11 +1,13 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
-import Index from '../app/page';
+import { Route } from '../src/routes/index';
 
 describe('Index', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Index />);
-    expect(baseElement).toBeTruthy();
+    const Page = Route.options.component;
+    expect(Page).toBeDefined();
+    if (Page) render(<Page />);
+    expect(screen.getByRole('heading', { level: 1 }).textContent).toBe('Conception d’applications et sites Web');
   });
 });

@@ -1,10 +1,11 @@
-import { Metadata } from 'next';
+import { createFileRoute } from '@tanstack/react-router';
 
-export const metadata: Metadata = {
-  title: 'Barberos — À propos',
-};
+export const Route = createFileRoute('/about')({
+  head: () => ({ meta: [{ title: 'Barberos — À propos' }] }),
+  component: Page,
+});
 
-export default function Page() {
+function Page() {
   return (
     <>
       <h1>À propos</h1>

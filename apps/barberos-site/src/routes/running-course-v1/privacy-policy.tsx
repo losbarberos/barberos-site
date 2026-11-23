@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import { Metadata } from 'next';
+import { createFileRoute, Link } from '@tanstack/react-router';
 
-export const metadata: Metadata = {
-  title: 'Barberos — Privacy Policy',
-};
+export const Route = createFileRoute('/running-course-v1/privacy-policy')({
+  head: () => ({ meta: [{ title: 'Barberos — Privacy Policy' }] }),
+  component: Page,
+});
 
-export default function Page() {
+function Page() {
   return (
     <>
       <h1>Privacy Policy</h1>
@@ -22,8 +22,8 @@ export default function Page() {
         except as described in this Privacy Policy.
         <br />
         The terms used in this Privacy Policy have the same meanings as in our{' '}
-        <Link href={'terms-and-conditions'}>Terms and Conditions</Link>, which are accessible at Barberos unless otherwise defined in this
-        Privacy Policy.
+        <Link to="/running-course-v1/terms-and-conditions">Terms and Conditions</Link>, which are accessible at Barberos unless otherwise
+        defined in this Privacy Policy.
       </p>
 
       <h5>Information Collection and Use</h5>

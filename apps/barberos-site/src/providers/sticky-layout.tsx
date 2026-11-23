@@ -1,6 +1,4 @@
-'use client';
-
-import { createContext, PropsWithChildren, useContext, useLayoutEffect, useState } from 'react';
+import { createContext, PropsWithChildren, useContext, useEffect, useState } from 'react';
 
 export type StickyLayoutContextType = {
   sticky: boolean;
@@ -11,7 +9,7 @@ const StickyLayoutContext = createContext<StickyLayoutContextType>({ sticky: fal
 export const StickyLayoutProvider = ({ children }: PropsWithChildren) => {
   const [sticky, setSticky] = useState(false);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const onScroll = (e: Event) => {
       // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       const scrollTop = (e.target! as Document).documentElement.scrollTop;

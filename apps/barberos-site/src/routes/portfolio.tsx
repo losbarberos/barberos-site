@@ -1,13 +1,14 @@
+import { createFileRoute } from '@tanstack/react-router';
 import { BsApple, BsGooglePlay } from 'react-icons/bs';
 import { MdOutlineDesktopMac } from 'react-icons/md';
 import React from 'react';
-import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Barberos — Portfolio',
-};
+export const Route = createFileRoute('/portfolio')({
+  head: () => ({ meta: [{ title: 'Barberos — Portfolio' }] }),
+  component: Page,
+});
 
-export default function Page() {
+function Page() {
   return (
     <>
       <h1>Portfolio</h1>

@@ -1,7 +1,11 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "jsx": "preserve",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -10,31 +14,13 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "types": ["jest", "node"],
+    "types": ["vite/client", "jest", "node"],
     "paths": {
-      "@/components/*": ["apps/barberos-site/components/*"],
-      "@/lib/*": ["apps/barberos-site/lib/*"],
-      "@/styles/*": ["apps/barberos-site/styles/*"],
-      "@/data/*": ["apps/barberos-site/data/*"],
-      "@/services/*": ["apps/barberos-site/services/*"]
-    },
-    "ignoreDeprecations": "6.0"
+      "@/components/*": ["apps/barberos-site/src/components/*"],
+      "@/providers/*": ["apps/barberos-site/src/providers/*"],
+      "@/services/*": ["apps/barberos-site/src/services/*"]
+    }
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    "**/*.js",
-    "**/*.jsx",
-    "../../apps/barberos-site/.next/types/**/*.ts",
-    "../../dist/apps/barberos-site/.next/types/**/*.ts",
-    "next-env.d.ts",
-    ".next/types/**/*.ts"
-  ],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],
   "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
 }

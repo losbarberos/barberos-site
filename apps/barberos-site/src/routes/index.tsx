@@ -1,16 +1,17 @@
-import Image from 'next/image';
-import support from '../public/images/support.svg';
-import technology from '../public/images/technology.svg';
-import career from '../public/images/career.svg';
+import { createFileRoute } from '@tanstack/react-router';
 
-export default function Page() {
+export const Route = createFileRoute('/')({
+  component: Page,
+});
+
+function Page() {
   return (
     <>
       <h1>Conception d’applications et sites Web</h1>
       <p>Notre équipe crée et vous accompagne dans vos projets de création de sites Web, sites vitrines, landing pages, CRM, ERP.</p>
 
       <section className="offer-line">
-        <Image alt="Support" src={support} />
+        <img alt="Support" src="/images/support.svg" width="512" height="512" />
         <div>
           <h4>
             Accompagnement <em>sur-mesure</em>
@@ -36,7 +37,7 @@ export default function Page() {
       </section>
 
       <section className="offer-line offer-line-even">
-        <Image alt="Technologie" src={technology} />
+        <img alt="Technologie" src="/images/technology.svg" width="512" height="512" />
         <div>
           <h4>
             Transformation <em>numérique</em>
@@ -58,7 +59,7 @@ export default function Page() {
       </section>
 
       <section className="offer-line">
-        <Image alt="Formations" src={career} />
+        <img alt="Formations" src="/images/career.svg" width="512" height="512" />
         <div>
           <h4>
             Formations <em>techniques</em>

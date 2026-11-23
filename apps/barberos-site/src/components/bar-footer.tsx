@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '@tanstack/react-router';
 
 const BarFooter = () => (
   <footer className="text-[#ffffff] bg-[#555555] flex-shrink-0 py-4">
@@ -7,17 +7,17 @@ const BarFooter = () => (
 
     <ul className="list-none list-outside p-0">
       <li className="w-full my-2 text-center">
-        <Link href="/about" className="undecorated">
+        <Link to="/about" className="undecorated">
           À propos
         </Link>
       </li>
       <li className="w-full my-2 text-center">
-        <Link href="/legal-mentions" className="undecorated">
+        <Link to="/legal-mentions" className="undecorated">
           Mentions légales
         </Link>
       </li>
       <li className="w-full my-2 text-center">
-        <Link href="/contact" className="undecorated">
+        <Link to="/contact" className="undecorated">
           Contact
         </Link>
       </li>

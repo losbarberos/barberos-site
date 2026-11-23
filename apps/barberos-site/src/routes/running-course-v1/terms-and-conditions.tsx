@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import { Metadata } from 'next';
+import { createFileRoute, Link } from '@tanstack/react-router';
 
-export const metadata: Metadata = {
-  title: 'Barberos — Terms and Conditions',
-};
+export const Route = createFileRoute('/running-course-v1/terms-and-conditions')({
+  head: () => ({ meta: [{ title: 'Barberos — Terms and Conditions' }] }),
+  component: Page,
+});
 
-export default function Page() {
+function Page() {
   return (
     <>
       <h1>Terms and Conditions</h1>
@@ -24,9 +24,9 @@ export default function Page() {
 
       <p>
         The app stores and processes personal data that you have provided to us, to provide our Service in agreement with our{' '}
-        <Link href={'privacy-policy'}>Privacy Policy</Link>. It’s your responsibility to keep your phone and access to the app secure. We
-        therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and
-        limitations imposed by the official operating system of your device. It could make your phone vulnerable to
+        <Link to="/running-course-v1/privacy-policy">Privacy Policy</Link>. It’s your responsibility to keep your phone and access to the
+        app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software
+        restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to
         malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the Barberos app won’t work
         properly or at all.
         <br />
