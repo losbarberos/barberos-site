@@ -11,11 +11,11 @@ function Page() {
       <p>Notre équipe crée et vous accompagne dans vos projets de création de sites Web, sites vitrines, landing pages, CRM, ERP.</p>
 
       <section className="offer-line">
-        <img alt="Support" src="/images/support.svg" width="512" height="512" />
+        <img alt="" src="/images/support.svg" width="512" height="512" />
         <div>
-          <h4>
+          <h2>
             Accompagnement <em>sur-mesure</em>
-          </h4>
+          </h2>
           <p>
             Parce que chaque besoin est unique, nous vous accompagnons dans votre projet durant toutes les phases de sa conception. Nous
             vous apportons aussi notre expérience pour vous proposer la solution la plus adaptée possible. Nous pouvons intervenir à tout
@@ -37,11 +37,11 @@ function Page() {
       </section>
 
       <section className="offer-line offer-line-even">
-        <img alt="Technologie" src="/images/technology.svg" width="512" height="512" />
+        <img alt="" src="/images/technology.svg" width="512" height="512" />
         <div>
-          <h4>
+          <h2>
             Transformation <em>numérique</em>
-          </h4>
+          </h2>
           <p>
             Dans un monde toujours plus connecté, que vous soyez une entreprise ou une association, vous avez besoin du numérique pour être
             visible ou pour être plus efficace dans votre métier. Le marché actuel attend des expériences numériques efficaces et une
@@ -59,11 +59,11 @@ function Page() {
       </section>
 
       <section className="offer-line">
-        <img alt="Formations" src="/images/career.svg" width="512" height="512" />
+        <img alt="" src="/images/career.svg" width="512" height="512" />
         <div>
-          <h4>
+          <h2>
             Formations <em>techniques</em>
-          </h4>
+          </h2>
           <p>
             Nous participons à la montée en compétences de vos équipes de développeurs, sur des sujets techniques orientés Développeur ou
             Opérationnels. En fonction du public, ces formations peuvent être à distance ou en présentiel. Les formations sont équilibrées

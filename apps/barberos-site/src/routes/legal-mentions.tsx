@@ -17,7 +17,7 @@ function Page() {
         sans réserve des présentes mentions légales.
       </p>
       <p>Ces dernières sont accessibles sur le site à la rubrique « Mentions légales ».</p>
-      <h5>ARTICLE 1 : L’éditeur</h5>
+      <h2 className="article-title">ARTICLE 1 : L’éditeur</h2>
       <p>
         L’édition du site <a href="https://barberos.fr">barberos.fr</a> est assurée par la Société BARBEROS SARL au capital de 2000 euros,
         immatriculée au RCS de Nancy sous le numéro 902 205 202 dont le siège social est situé au 21 rue Charles Martel 54250
@@ -25,7 +25,7 @@ function Page() {
       </p>
       <p>N° de TVA intracommunautaire : FR77902205202</p>
       <p>Le Directeur de la publication est Loïc Barbier.</p>
-      <h5>ARTICLE 2 : L’hébergeur</h5>
+      <h2 className="article-title">ARTICLE 2 : L’hébergeur</h2>
       <p>
         L’hébergeur du site <a href="https://barberos.fr">barberos.fr</a> est la Société Google, dont le siège social est situé à :
       </p>
@@ -40,18 +40,18 @@ function Page() {
           États-Unis
         </p>
       </blockquote>
-      <h5>ARTICLE 3 : Accès au site</h5>
+      <h2 className="article-title">ARTICLE 3 : Accès au site</h2>
       <p>
         Le site est accessible par tout endroit, 7j/7, 24h/24 sauf cas de force majeure, interruption programmée ou non et pouvant découler
         d’une nécessité de maintenance. En cas de modification, interruption ou suspension des services le site{' '}
         <a href="https://barberos.fr">barberos.fr</a> ne saurait être tenu responsable.
       </p>
-      <h5>ARTICLE 4 : Collecte des données</h5>
+      <h2 className="article-title">ARTICLE 4 : Collecte des données</h2>
       <p>
         Le site est exempté de déclaration à la Commission Nationale Informatique et Libertés (CNIL) dans la mesure où il ne collecte aucune
         donnée concernant les utilisateurs.
       </p>
-      <h5>ARTICLE 5 : Cookies</h5>
+      <h2 className="article-title">ARTICLE 5 : Cookies</h2>
       <p>
         L’Utilisateur est informé que lors de ses visites sur le site, un cookie peut s’installer automatiquement sur son logiciel de
         navigation. Ce cookie a une finalité analytique.
@@ -62,7 +62,7 @@ function Page() {
         navigation de celui-ci sur le site Internet. L’Utilisateur pourra désactiver ce cookie par l’intermédiaire des paramètres figurant
         au sein de son logiciel de navigation.
       </p>
-      <h5>ARTICLE 6 : Propriété intellectuelle</h5>
+      <h2 className="article-title">ARTICLE 6 : Propriété intellectuelle</h2>
       <p>
         Toute utilisation, reproduction, diffusion, commercialisation, modification de toute ou partie du site{' '}
         <a href="https://barberos.fr">barberos.fr</a>, sans autorisation de l’Éditeur est prohibée et pourra entraînée des actions et

@@ -84,10 +84,10 @@ function Page() {
         <div>contact@barberos.fr</div>
       </section>
 
-      <h4 className="flex flex-row justify-center items-center contact-form-title">
+      <h2 className="flex flex-row justify-center items-center contact-form-title">
         <img alt="Message" src="/icons/mail.svg" height="24" className="h-6 w-6" />
         Envoyer un message
-      </h4>
+      </h2>
 
       <Formik
         initialValues={{ fromName: '', fromEmail: '', subject: '', body: '' }}

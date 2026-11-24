@@ -1,43 +1,40 @@
 const { createGlobPatternsForDependencies } = require('@nx/react/tailwind');
 const { join } = require('path');
 
+// Design tokens of the "Charte graphique Barberos" design system. Values are defined once as CSS variables in
+// src/styles/globals.scss; spacing, radius (none), shadow-lg and the 768/1024 px breakpoints match Tailwind's defaults.
 module.exports = {
   content: [join(__dirname, 'src/**/*!(*.stories|*.spec).{ts,tsx,html}'), ...createGlobPatternsForDependencies(__dirname)],
   theme: {
     extend: {
       colors: {
-        'bar-red': {
-          50: '#ff4f4f',
-          100: '#ff3636',
-          200: '#ff1c1c',
-          300: '#ff0303',
-          400: '#e80000',
-          500: '#cf0000',
-          600: '#b50000',
-          700: '#9c0000',
-          800: '#820000',
-          900: '#690000',
-          A100: '#ff6969',
-          A200: '#ff8282',
-          A400: '#ff9c9c',
-          A700: '#4f0000',
-        },
-        'bar-blue': {
-          50: '#4f4fff',
-          100: '#3636ff',
-          200: '#1c1cff',
-          300: '#0303ff',
-          400: '#0000e8',
-          500: '#0000cf',
-          600: '#0000b5',
-          700: '#00009c',
-          800: '#000082',
-          900: '#000069',
-          A100: '#6969ff',
-          A200: '#8282ff',
-          A400: '#9c9cff',
-          A700: '#00004f',
-        },
+        'brand-red': 'var(--brand-red)',
+        'brand-blue': 'var(--brand-blue)',
+        ink: 'var(--ink)',
+        body: 'var(--text-body)',
+        field: 'var(--text-field)',
+        surface: 'var(--surface)',
+        'surface-hover': 'var(--surface-hover)',
+        'link-hover-line': 'var(--link-hover-line)',
+        footer: 'var(--footer-bg)',
+        'on-footer': 'var(--on-footer)',
+        'footer-title': 'var(--footer-title)',
+        'required-mark': 'var(--required-mark)',
+      },
+      fontFamily: {
+        display: ['Cairo', '"Gill Sans"', '"Gill Sans MT"', 'Calibri', '"Trebuchet MS"', 'sans-serif'],
+        body: ['Oxygen', '"Segoe UI"', 'Roboto', 'Ubuntu', 'Cantarell', '"Fira Sans"', '"Droid Sans"', '"Helvetica Neue"', 'sans-serif'],
+      },
+      fontSize: {
+        'title-page': ['30px', { lineHeight: '36px', fontWeight: '700' }],
+        'title-section': ['20px', { lineHeight: '28px', fontWeight: '700' }],
+        input: ['18px', '28px'],
+        label: ['12px', { lineHeight: '16px', fontWeight: '700' }],
+        'footer-heading': ['20px', { lineHeight: '28px', fontWeight: '700' }],
+        small: ['12px', '16px'],
+      },
+      spacing: {
+        pictogram: '128px',
       },
     },
   },

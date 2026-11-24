@@ -13,21 +13,25 @@ type Props = {
 
 const BarTextfield = ({ name, label, type, error, required, ...rest }: Props) => {
   return (
-    <div className={`relative mb-2 border border-solid border-black ${error ? 'border-red-500' : ''}`}>
+    <div className="relative mb-2 border border-solid border-ink rounded-none focus-within:outline focus-within:outline-2 focus-within:outline-offset-2 focus-within:outline-brand-blue">
       <Field
         id={name}
         name={name}
         type={type || 'text'}
-        className="bg-none bg-transparent p-2 pt-5 block border-none focus:outline-none rounded-none text-lg text-gray-600 w-full"
+        className="bg-none bg-transparent p-2 pt-5 block border-none focus:outline-none rounded-none text-input text-field w-full"
         required={required}
         {...rest}
       />
       <label
         htmlFor="name"
-        className={`absolute text-xs text-gray-700 font-bold uppercase left-1 -top-0 transition delay-100 ease-in-out pointer-events-none ${error ? 'text-red-500' : ''}`}
+        className={`absolute text-label uppercase left-1 top-0 transition delay-100 ease-in-out pointer-events-none ${error ? 'text-brand-red' : 'text-body'}`}
       >
         {label}
-        {required && <span className="text-red-500">*</span>}
+        {required && (
+          <span className="text-required-mark" aria-hidden="true">
+            *
+          </span>
+        )}
       </label>
     </div>
   );

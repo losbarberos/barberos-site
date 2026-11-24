@@ -13,7 +13,7 @@ function Page() {
     <>
       <h1>Portfolio</h1>
 
-      <h4>BARberos — Mon bar à la maison 🍹</h4>
+      <h2>BARberos — Mon bar à la maison 🍹</h2>
       <div>
         <p>
           BARberos permet de gérer son stock de boissons et d’offrir à ses amis un accueil digne d’un bar, avec le confort de la maison.{' '}
@@ -54,7 +54,7 @@ function Page() {
         </div>
       </div>
 
-      <h4 className="mt-12">Suivi Croissance — Suivi de croissance en toute simplicité 📈</h4>
+      <h2 className="mt-12">Suivi Croissance — Suivi de croissance en toute simplicité 📈</h2>
       <p>
         Suivi Croissance est une application gratuite permettant de suivre facilement et rapidement la croissance de ses proches.
         L’application se base sur les mêmes courbes que celles présentes dans les carnets de santé. Les mesures suivies sont : le poids, la
@@ -85,7 +85,7 @@ function Page() {
         </div>
       </div>
 
-      <h4 className="mt-12">Geo Quiz — Deviens un expert en géographie 🌍</h4>
+      <h2 className="mt-12">Geo Quiz — Deviens un expert en géographie 🌍</h2>
       <p>Geo Quiz est une application gratuite permettant de travailler sa géographie.</p>
       <p>L’application fonctionne sous forme de partie de 10 questions.</p>
       <p>Vous avez plusieurs modes de jeux :</p>
