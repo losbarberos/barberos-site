@@ -14,8 +14,8 @@ const BarHeader = () => {
   }
 
   return (
-    <header className={`w-full top-0 z-50 bg-white ${stickyHeaderStyle}`}>
-      <nav className={`flex flex-col items-center gap-6 md:flex-row my-4 max-w-screen-md mx-auto justify-between`}>
+    <header className={`w-full top-0 z-50 bg-surface ${stickyHeaderStyle}`}>
+      <nav className="flex flex-col items-center gap-6 md:flex-row my-4 px-2 max-w-screen-md mx-auto justify-between">
         <Link to="/" className="undecorated w-32">
           <img src="/images/barberos.svg" alt="Barberos" className={`h-16 object-contain ${stickyLogoStyle}`} />
         </Link>

@@ -11,7 +11,7 @@ function Page() {
       <p>Notre équipe crée et vous accompagne dans vos projets de création de sites Web, sites vitrines, landing pages, CRM, ERP.</p>
 
       <section className="offer-line">
-        <img alt="Support" src="/images/support.svg" width="512" height="512" />
+        <img alt="" src="/images/support.svg" width="512" height="512" />
         <div>
           <h4>
             Accompagnement <em>sur-mesure</em>
@@ -37,7 +37,7 @@ function Page() {
       </section>
 
       <section className="offer-line offer-line-even">
-        <img alt="Technologie" src="/images/technology.svg" width="512" height="512" />
+        <img alt="" src="/images/technology.svg" width="512" height="512" />
         <div>
           <h4>
             Transformation <em>numérique</em>
@@ -59,7 +59,7 @@ function Page() {
       </section>
 
       <section className="offer-line">
-        <img alt="Formations" src="/images/career.svg" width="512" height="512" />
+        <img alt="" src="/images/career.svg" width="512" height="512" />
         <div>
           <h4>
             Formations <em>techniques</em>

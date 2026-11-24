@@ -1,29 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Oxygen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400..900&family=Oxygen:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+// Design tokens of the "Charte graphique Barberos" design system (single light theme).
+// Tailwind maps the colors to utilities (`text-brand-red`, `bg-footer`…) in tailwind.config.js.
+:root {
+  --brand-red: #cf0000; // links, navigation, accented word of a title (5.7:1 on surface)
+  --brand-blue: #0000cf; // barber-pole stripes, bullets, focus ring (11:1 on surface)
+  --ink: #000000; // body text, titles, button and field borders
+  --text-body: #374151; // service paragraphs, field labels (10.3:1)
+  --text-field: #4b5563; // text typed in a field (7.6:1)
+  --surface: #ffffff; // page, header and button background
+  --surface-hover: #f3f4f6; // button background on hover and focus
+  --link-hover-line: #ff1c1c; // 1px line under a hovered link (a mark, never text)
+  --footer-bg: #555555;
+  --on-footer: #ffffff; // footer links and copyright (7.5:1 on footer-bg)
+  --footer-title: #aaaaaa; // footer company name only: 20px bold (3.2:1 on footer-bg)
+  --required-mark: #ef4444; // required-field asterisk, a symbol only (3.8:1)
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    Oxygen,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  @apply bg-surface text-ink font-body;
+}
+
+// Focus ring: 2px solid brand-blue, 2px offset, on every interactive element (an addition of the charter to the old site).
+:focus-visible {
+  @apply outline outline-2 outline-offset-2 outline-brand-blue;
 }
 
 h1,
@@ -32,17 +46,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Cairo, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: bold;
-  @apply my-5;
+  @apply font-display font-bold my-5;
 }
 
 h1 {
-  @apply text-center text-3xl my-5;
+  @apply text-center text-title-page;
 }
 
 h4 {
-  @apply text-center text-xl;
+  @apply text-center text-title-section;
 
   img {
     @apply align-middle mr-2;
@@ -54,6 +66,39 @@ p {
 
   &.notice {
     @apply text-center;
+  }
+}
+
+em {
+  @apply text-brand-red not-italic;
+}
+
+// Links: brand-red; a transparent 1px line is reserved below so that the hover line does not move the text.
+a {
+  @apply text-brand-red no-underline border-0 border-b border-solid border-transparent transition-colors duration-200 ease-in;
+
+  &:focus,
+  &:hover {
+    @apply border-link-hover-line;
+  }
+
+  &.undecorated {
+    @apply text-current;
+
+    &:focus,
+    &:hover {
+      @apply border-transparent;
+    }
+  }
+}
+
+ul.bar-list {
+  @apply list-none my-4 pl-8;
+
+  li::before {
+    @apply inline-block h-3 w-3 -ml-4 mr-2 bg-cover;
+    content: '';
+    background-image: url(/icons/item.svg);
   }
 }
 
@@ -87,11 +132,12 @@ p {
   }
 }
 
+// Service section: pictogram above the text, side by side from 1024px with alternating sides.
 .offer-line {
   @apply flex flex-col lg:flex-row mt-10 items-center;
 
   img {
-    @apply w-32 lg:mr-12;
+    @apply w-pictogram flex-shrink-0 lg:mr-12;
   }
 
   div {
@@ -100,7 +146,7 @@ p {
     }
 
     p {
-      @apply text-gray-700;
+      @apply text-body;
     }
   }
 }
@@ -113,33 +159,7 @@ p {
   }
 }
 
-em {
-  @apply text-bar-red-500 not-italic;
-}
-
-a {
-  @apply border-0 border-solid border-bar-red-500 text-bar-red-500 transition;
-
-  &:focus,
-  &:hover {
-    @apply border-b border-bar-red-200 duration-200 ease-in;
-  }
-
-  &.undecorated {
-    @apply border-b-0 text-current;
-  }
-}
-
-ul.bar-list {
-  @apply list-none my-4 pl-10;
-
-  li::before {
-    @apply inline-block h-3 w-3 -ml-4 mr-2 bg-cover;
-    content: '';
-    background-image: url(/icons/item.svg);
-  }
-}
-
-* {
-  box-sizing: border-box;
+// brand-blue is only 1.5:1 on footer-bg: the focus ring takes the footer text color there (deviation from the charter).
+.bar-footer :focus-visible {
+  @apply outline-on-footer;
 }

@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from '@tanstack/react-router';
 
 const BarFooter = () => (
-  <footer className="text-[#ffffff] bg-[#555555] flex-shrink-0 py-4">
-    <div className="text-[#aaa] font-bold text-xl text-center">Barberos SARL</div>
+  <footer className="bar-footer text-on-footer bg-footer flex-shrink-0 py-4">
+    <div className="text-footer-title text-footer-heading text-center">Barberos SARL</div>
 
-    <ul className="list-none list-outside p-0">
+    <ul className="list-none list-outside p-0 mt-4">
       <li className="w-full my-2 text-center">
         <Link to="/about" className="undecorated">
           À propos
@@ -28,7 +28,7 @@ const BarFooter = () => (
       </li>
     </ul>
 
-    <div className="text-xs text-center mt-2">Copyright © 2021-2024 – Tous droits réservés</div>
+    <div className="text-small text-center mt-2">Copyright © 2021-2024 – Tous droits réservés</div>
   </footer>
 );
 

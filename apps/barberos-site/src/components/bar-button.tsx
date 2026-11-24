@@ -12,7 +12,7 @@ const BarButton = ({ label, type, onClick, disabled = false }: Props) => {
     <button
       type={type || 'button'}
       onClick={onClick}
-      className="p-2 border-2 border-black border-solid bg-white uppercase rounded-none hover:bg-gray-100 focus:bg-gray-100 cursor-pointer"
+      className="p-2 border-2 border-ink border-solid bg-surface text-ink uppercase rounded-none hover:bg-surface-hover focus:bg-surface-hover cursor-pointer disabled:cursor-default"
       disabled={disabled}
     >
       {label}
