@@ -20,14 +20,20 @@ const BarTextfield = ({ name, label, type, error, required, ...rest }: Props) =>
         type={type || 'text'}
         className="bg-none bg-transparent p-2 pt-5 block border-none focus:outline-none rounded-none text-lg text-gray-600 w-full"
         required={required}
+        aria-invalid={error || undefined}
+        aria-describedby={error ? `${name}-error` : undefined}
         {...rest}
       />
       <label
-        htmlFor="name"
+        htmlFor={name}
         className={`absolute text-xs text-gray-700 font-bold uppercase left-1 -top-0 transition delay-100 ease-in-out pointer-events-none ${error ? 'text-red-500' : ''}`}
       >
         {label}
-        {required && <span className="text-red-500">*</span>}
+        {required && (
+          <span className="text-red-500" aria-hidden="true">
+            *
+          </span>
+        )}
       </label>
     </div>
   );
