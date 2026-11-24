@@ -12,6 +12,8 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      // Light theme only: also opts out of the browser's automatic dark mode.
+      { name: 'color-scheme', content: 'only light' },
       { title: 'Barberos' },
       {
         name: 'description',

@@ -19,6 +19,9 @@
   --on-footer: #ffffff; // footer links and copyright (7.5:1 on footer-bg)
   --footer-title: #aaaaaa; // footer company name only: 20px bold (3.2:1 on footer-bg)
   --required-mark: #ef4444; // required-field asterisk, a symbol only (3.8:1)
+
+  // The charter has a single light theme: keep native controls light and the canvas white in a dark-mode browser.
+  color-scheme: light;
 }
 
 * {
@@ -31,8 +34,13 @@ body {
   margin: 0;
 }
 
+html,
 body {
-  @apply bg-surface text-ink font-body;
+  @apply bg-surface;
+}
+
+body {
+  @apply text-ink font-body;
 }
 
 // Focus ring: 2px solid brand-blue, 2px offset, on every interactive element (an addition of the charter to the old site).
