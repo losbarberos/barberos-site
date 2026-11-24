@@ -21,7 +21,8 @@
   --required-mark: #ef4444; // required-field asterisk, a symbol only (3.8:1)
 
   // The charter has a single light theme: keep native controls light and the canvas white in a dark-mode browser.
-  color-scheme: light;
+  // `only light` matches the color-scheme meta of __root.tsx and opts out of the browser's automatic dark mode.
+  color-scheme: only light;
 }
 
 * {
@@ -30,13 +31,7 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-}
-
-html,
-body {
-  @apply bg-surface;
+  @apply p-0 m-0 bg-surface;
 }
 
 body {

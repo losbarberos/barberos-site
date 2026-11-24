@@ -13,7 +13,7 @@ const BarMenuItem = ({ to, children }: BarMenuItemProps) => (
 );
 
 const BarMenu = () => (
-  <ul className="flex flex-row flex-auto flex-wrap justify-center md:justify-end items-center gap-x-6 gap-y-2 m-0 px-0 list-none">
+  <ul className="flex flex-row flex-auto flex-wrap justify-center md:justify-end items-center gap-x-4 md:gap-x-6 gap-y-2 m-0 px-0 list-none">
     <BarMenuItem to="/">Services</BarMenuItem>
     <BarMenuItem to="/portfolio">Portfolio</BarMenuItem>
     <BarMenuItem to="/about">À propos</BarMenuItem>
