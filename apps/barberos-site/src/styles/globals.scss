@@ -61,11 +61,17 @@ h1 {
   @apply text-center text-title-page;
 }
 
-h4 {
+// Section titles are h2 (the charter's "h4" style): centered title-section.
+h2 {
   @apply text-center text-title-section;
 
   img {
     @apply align-middle mr-2;
+  }
+
+  // Article titles of the legal and policy pages keep the body size, left-aligned.
+  &.article-title {
+    @apply text-left text-base;
   }
 }
 
@@ -149,7 +155,7 @@ ul.bar-list {
   }
 
   div {
-    h4 {
+    h2 {
       @apply mb-4;
     }
 

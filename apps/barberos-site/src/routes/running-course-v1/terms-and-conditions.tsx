@@ -67,7 +67,7 @@ function Page() {
         delete it from your device.
       </p>
 
-      <h5>Changes to This Terms and Conditions</h5>
+      <h2 className="article-title">Changes to This Terms and Conditions</h2>
       <p>
         We may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. We
         will notify you of any changes by posting the new Terms and Conditions on this page.
@@ -75,7 +75,7 @@ function Page() {
         These terms and conditions are effective as of 2022-07-12.
       </p>
 
-      <h5>Contact Us</h5>
+      <h2 className="article-title">Contact Us</h2>
       <p>
         If you have any questions or suggestions about our Terms and Conditions, do not hesitate to contact us at{' '}
         <a href="mailto:privacy@barberos.fr">privacy@barberos.fr</a>.

@@ -10,7 +10,7 @@ function Page() {
     <>
       <h1>À propos</h1>
 
-      <h4>Une équipe de développement passionnée 🔥</h4>
+      <h2>Une équipe de développement passionnée 🔥</h2>
 
       <p>
         Dans la sphère professionnelle du développement d’applications Web complexes depuis plus de 15 ans, notre équipe a acquis une solide
